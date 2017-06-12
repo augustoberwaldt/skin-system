@@ -1,2 +1,2 @@
-# diseases--recognition
-diseases- recognition
+# diseases-recognition
+diseases-recognition
