@@ -1,6 +1,6 @@
 {
   "name": "Python",
-  "description": "A barebones Python app, which can easily be deployed to Heroku.",
+  "description": "diseases-recognition",
   "image": "heroku/python",
   "repository": "https://github.com/augustoberwaldt/diseases-recognition",
   "keywords": ["python", "django" ],
@@ -9,7 +9,6 @@
     "test": {
       "scripts": {
         "test-setup": "python manage.py collectstatic --noinput",
-        "test": "python manage.py test"
       }
     }
   }
