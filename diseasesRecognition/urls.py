@@ -16,11 +16,10 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
-from rest_framework_swagger.views import get_swagger_view
-
-schema_view = get_swagger_view(title='API')
+from . import views
 
 urlpatterns = [
-    url(r'^$', schema_view),
+    url(r'^$', views.index, name='index'),
+    url(r'^webservice/', include('webservice.urls')),
     url(r'^admin/', admin.site.urls),
 ]
