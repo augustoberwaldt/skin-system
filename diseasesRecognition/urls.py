@@ -20,6 +20,6 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    url(r'^webservice/', include('webservice.urls')),
+    url(r'^webservice/', include('webService.urls')),
     url(r'^admin/', admin.site.urls),
 ]
