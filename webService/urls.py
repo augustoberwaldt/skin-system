@@ -11,6 +11,6 @@ schema_view = get_swagger_view(title='API')
 
 urlpatterns = [
     url(r'^$', schema_view),
-    url(r'^users/', include(router.urls)),
+    url(r'^', include(router.urls)),
 ]
 
