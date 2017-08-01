@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37243a85-7913-42bf-b854-4c3d2546e5dd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webService/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webService/models/User.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webService/models/UserModel.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webService/models/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webService/serializers/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webService/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webService/views/__init__.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webservice/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webservice/views.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webservice/__init__.py" afterPath="$PROJECT_DIR$/webService/controllers/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webservice/admin.py" afterPath="$PROJECT_DIR$/webService/admin.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webservice/apps.py" afterPath="$PROJECT_DIR$/webService/apps.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webservice/migrations/__init__.py" afterPath="$PROJECT_DIR$/webService/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webservice/models.py" afterPath="$PROJECT_DIR$/webService/models.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/webservice/tests.py" afterPath="$PROJECT_DIR$/webService/tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diseasesRecognition/urls.py" afterPath="$PROJECT_DIR$/diseasesRecognition/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webService/urls.py" afterPath="$PROJECT_DIR$/webService/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webService/views/UserViewSet.py" afterPath="$PROJECT_DIR$/webService/views/UserViewSet.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webService/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -56,7 +42,7 @@
         <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/rest_framework/routers.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="381">
-              <caret line="62" column="24" lean-forward="true" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+              <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -66,20 +52,18 @@
         <entry file="file://$PROJECT_DIR$/diseasesRecognition/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserViewSet.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserViewSet.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webService/views/UserViewSet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="36">
+              <caret line="2" column="51" lean-forward="false" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/webService/serializers/UserSerializer.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -130,8 +114,8 @@
         <option value="$PROJECT_DIR$/webService/apps.py" />
         <option value="$PROJECT_DIR$/webService/models/UserModel.py" />
         <option value="$PROJECT_DIR$/diseasesRecognition/urls.py" />
-        <option value="$PROJECT_DIR$/webService/views/UserViewSet.py" />
         <option value="$PROJECT_DIR$/webService/urls.py" />
+        <option value="$PROJECT_DIR$/webService/views/UserViewSet.py" />
       </list>
     </option>
   </component>
@@ -179,12 +163,6 @@
               <item name="diseases-recognition" type="b2602c69:ProjectViewProjectNode" />
               <item name="diseases-recognition" type="462c0819:PsiDirectoryNode" />
               <item name="webService" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="diseases-recognition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="diseases-recognition" type="462c0819:PsiDirectoryNode" />
-              <item name="webService" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -398,31 +376,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webService/serializers/UserSerializer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/diseasesRecognition/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webService/views/UserViewSet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -447,7 +405,7 @@
     <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/rest_framework/routers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="381">
-          <caret line="62" column="24" lean-forward="true" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
+          <caret line="62" column="24" lean-forward="false" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -455,10 +413,28 @@
     <entry file="file://$PROJECT_DIR$/webService/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webService/serializers/UserSerializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webService/views/UserViewSet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="51" lean-forward="false" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>

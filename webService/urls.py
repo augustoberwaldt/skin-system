@@ -1,14 +1,11 @@
 from django.conf.urls import url, include
-from rest_framework import routers, serializers, viewsets
+from rest_framework import routers
 from rest_framework_swagger.views import get_swagger_view
-
-from .views import UserViewSet
-
-
+from .views.UserViewSet import UserViewSet
 
 
 router = routers.DefaultRouter()
-router.register(r'users', UserViewSet, base_name='views')
+router.register(r'users', UserViewSet)
 
 schema_view = get_swagger_view(title='API')
 
