@@ -1,9 +1,9 @@
-from django.contrib.auth.models import User
+from webService.models.UserModel import User
 from rest_framework import routers, serializers
 
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
+class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ('url', 'username', 'email', 'is_staff')
+        fields = '__all__'
 

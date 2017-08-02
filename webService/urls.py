@@ -7,6 +7,7 @@ from .views.UserViewSet import UserViewSet
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 
+
 schema_view = get_swagger_view(title='API')
 
 urlpatterns = [
