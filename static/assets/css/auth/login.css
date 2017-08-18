@@ -1,0 +1,16 @@
+html,
+body{
+    height: 100%;
+}
+main {
+    padding: 0 !important;
+}
+.form-header {
+    padding: 12px 24px 12px 12px;
+}
+.form-header .col{
+	height:64px;
+}
+.form-body {
+    padding: 12px 24px;
+}
