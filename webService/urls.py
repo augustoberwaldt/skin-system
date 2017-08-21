@@ -14,4 +14,3 @@ urlpatterns = [
     url(r'^$', schema_view),
     url(r'^', include(router.urls)),
 ]
-
