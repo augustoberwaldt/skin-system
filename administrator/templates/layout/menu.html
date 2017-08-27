@@ -1,0 +1,70 @@
+<header>
+  <div class="brand-logo hide-on-large-only"></div>
+  <div class="navbar-fixed hide-on-large-only">
+    <nav>
+      <div class="nav-wrapper">
+        <ul class="right">
+          <li class="hide-on-small-only">
+              <a href="#search-in-modal" class="modal-trigger">
+                  <i class="material-icons">search</i>
+              </a>
+          </li>
+          <li class="hide-on-small-only">
+              <a href="account.html">
+                  <i class="material-icons">perm_identity</i>
+             </a>
+          </li>
+          <li class="hide-on-small-only">
+              <a href="login.html" target="_blank">
+                  <i class="material-icons">exit_to_app</i>
+              </a>
+          </li>
+          <li class="toogle-side-nav">
+              <a href="#" data-activates="slide-menu" class="button-collapse">
+                  <i class="material-icons">menu</i>
+              </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="slide-menu" class="side-nav fixed" data-simplebar-direction="vertical">
+    <ul class="side-nav-main">
+      <li class="logo hide-on-med-and-down">
+          LoGo
+      </li>
+
+      <li class="side-nav-inline hide-on-med-only">
+          <a href="login.html" class="inline waves-effect" target="_blank">
+              <i class="mdi-action-exit-to-app"></i>
+          </a>
+          <a href="account.html" class="inline waves-effect">
+              <i class="mdi-action-perm-identity"></i>
+          </a>
+          <a href="#search-in-modal" class="inline waves-effect modal-trigger">
+              <i class="mdi-action-search"></i>
+          </a>
+      </li>
+
+      <li>
+          <a href="{% url 'home' %}" href="#" class="waves-effect">
+              <i class="mdi-action-dashboard left"></i>
+              <span>Dashboard</span>
+          </a>
+      </li>
+      <li>
+          <a href="{% url 'home' %}" class="waves-effect">
+            <i class="mdi-action-description left"></i>
+            <span>Pages</span></span>
+          </a>
+      </li>
+      <li>
+          <a href="{% url 'classifier' %}"  class="waves-effect">
+              <i class="mdi-action-extension left"></i>
+              <span>Classificador</span>
+          </a>
+      </li>
+    </ul>
+  </div>
+</header>

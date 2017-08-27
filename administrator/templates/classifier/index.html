@@ -1,0 +1,37 @@
+{% extends 'layout/base.html' %}
+
+{% block content %}
+    <main>
+      <div class="container">
+        <div class="section">
+            {% include 'layout/filter.html' %}
+        </div>
+        <div class="section">
+          <div class="row">
+              <div class="col s12">
+                  <table class="striped">
+                        <thead>
+                          <tr>
+                              <th data-field="codigo">Código</th>
+                              <th data-field="name">Nome</th>
+                              <th data-field="type">Tipo</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                        {% for disease in diseases %}
+                            <tr>
+                              <td>0001</td>
+                              <td>psoríase</td>
+                              <td>test</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                  </table>
+                  {% include 'layout/pagination.html' %}
+                 </div>
+              </div>
+          </div>
+      </div>
+    </main>
+{% endblock content %}
