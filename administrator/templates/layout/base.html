@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-{% load staticfiles %}
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -7,15 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="msapplication-tap-highlight" content="no">
 
-    <title>Sistema de Diagnostico</title>
+    <title>Sistema de Diagnóstico</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-    <link href="{%  static 'assets/css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen">
-
-    <!-- Additional plugins styles -->
-    <link href="{%  static 'assets/css/prism.css' %}" type="text/css" rel="stylesheet" media="screen">
-    <link href="{%  static 'assets/css/simplebar.css' %}" type="text/css" rel="stylesheet" media="screen">
+    {% include 'layout/stylesheet.html' %}
 
     {% block contentCss %}
     {% endblock %}
@@ -23,20 +16,13 @@
 </head>
 <body>
 
-    {% include 'layout/menu.html' %}
+    {% if request.path != '/admin/' %}
+        {% include 'layout/menu.html' %}
+    {% endif %}
 
     {% block content %}
     {% endblock %}
+    <input type="hidden" id="pathPage" value="{{ request.path }}"/>
 </body>
-
-<!-- jQuery Library -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
-
-<!-- jQuery Plugins -->
-<script type="text/javascript" src="{%  static 'assets/js/prism.js' %}"></script>
-<script type="text/javascript" src="{%  static 'assets/js/simplebar.min.js' %}"></script>
-<!--materialize js-->
-<script type="text/javascript" src="{%  static 'assets/js/materialize.min.js' %}"></script>
-<script type="text/javascript" src="{%  static 'assets/js/initialize.js' %}"></script>
-
+    {% include 'layout/scripts.html' %}
 </html>
