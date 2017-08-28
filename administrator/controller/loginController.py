@@ -1,5 +1,5 @@
 
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 
 def home(request):
@@ -16,3 +16,10 @@ def register(request):
 
 def register(request):
     return render(request, 'auth/register.html')
+
+
+
+def logout(request):
+    return redirect('/admin/')
+
+

@@ -15,7 +15,7 @@
              </a>
           </li>
           <li class="hide-on-small-only">
-              <a href="login.html" target="_blank">
+              <a href="{% url 'logout' %}" target="_blank">
                   <i class="material-icons">exit_to_app</i>
               </a>
           </li>
@@ -32,11 +32,11 @@
   <div id="slide-menu" class="side-nav fixed" data-simplebar-direction="vertical">
     <ul class="side-nav-main">
       <li class="logo hide-on-med-and-down">
-          LoGo
+          Logo
       </li>
 
       <li class="side-nav-inline hide-on-med-only">
-          <a href="login.html" class="inline waves-effect" target="_blank">
+          <a href="{% url 'logout' %}" class="inline waves-effect">
               <i class="mdi-action-exit-to-app"></i>
           </a>
           <a href="account.html" class="inline waves-effect">

@@ -1,0 +1,53 @@
+{% extends 'layout/base.html' %}
+
+{% block content %}
+    <main>
+      <div class="container">
+
+        <div class="section">
+
+          <div class="row"
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input placeholder="Nome" id="first_name" type="text" class="validate">
+                  <label for="first_name">Nome</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input placeholder="Tipo" id="first_name" type="text" class="validate">
+                  <label for="first_name">Tipo</label>
+                </div>
+             </div>
+             <div class="row">
+                <div class="input-field col s12">
+                    <textarea placeholder="Descrição" id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Descrição</label>
+                </div>
+             </div>
+
+             <div class="row">
+                 <div class="file-field input-field">
+                      <div class="btn">
+                        <span>File</span>
+                        <input type="file">
+                      </div>
+                      <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text">
+                      </div>
+                 </div>
+             </div>
+             <br/>
+             <div class="row">
+                 <a  href="{% url 'classifier' %}" class="waves-effect waves-light btn-large">Voltar</a>
+                 <button class="btn waves-effect waves-light btn-large" type="submit" name="action">
+                     Salvar
+                 </button>
+             </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+{% endblock content %}

@@ -10,8 +10,7 @@
 
     {% include 'layout/stylesheet.html' %}
 
-    {% block contentCss %}
-    {% endblock %}
+    {% block contentCss %} {% endblock %}
 
 </head>
 <body>
@@ -20,8 +19,8 @@
         {% include 'layout/menu.html' %}
     {% endif %}
 
-    {% block content %}
-    {% endblock %}
+    {% block content %} {% endblock %}
+
     <input type="hidden" id="pathPage" value="{{ request.path }}"/>
 </body>
     {% include 'layout/scripts.html' %}
