@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <header>
   <div class="brand-logo hide-on-large-only"></div>
   <div class="navbar-fixed hide-on-large-only">
@@ -32,7 +33,7 @@
   <div id="slide-menu" class="side-nav fixed" data-simplebar-direction="vertical">
     <ul class="side-nav-main">
       <li class="logo hide-on-med-and-down">
-          Logo
+         <img src="{%static 'assets/img/logo.png'  %}" alt="logo" class="circle logo responsive-img">
       </li>
 
       <li class="side-nav-inline hide-on-med-only">

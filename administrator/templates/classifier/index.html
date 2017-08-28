@@ -9,12 +9,14 @@
         <div class="section">
           <div class="row">
               <div class="col s12">
-                  <table class="striped">
-                        <thead>
+
+                  <table class="striped" >
+                        <thead style="border-top: 1px solid #cee4ee;">
                           <tr>
                               <th data-field="codigo">Código</th>
                               <th data-field="name">Nome</th>
                               <th data-field="type">Tipo</th>
+                              <th> </th>
                           </tr>
                         </thead>
 
@@ -30,14 +32,15 @@
                         </tbody>
                   </table>
                   {% include 'layout/pagination.html' %}
-
-                  <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+                 </div>
+              </div>
+            <div class="row">
+                 <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
                       <a href="{% url  'add' %}" class="btn-floating btn-large primary-color">
                           <i class="material-icons">add</i>
                       </a>
-                  </div>
                  </div>
-              </div>
+            </div>
           </div>
       </div>
     </main>
