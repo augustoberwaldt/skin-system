@@ -15,7 +15,7 @@
 </head>
 <body>
 
-    {% if request.path != '/admin/' %}
+    {% if request.path != '/admin/' and request.path != '/admin/register' and request.path != '/admin/resetPass'   %}
         {% include 'layout/menu.html' %}
     {% endif %}
 
