@@ -1,0 +1,70 @@
+{% load staticfiles %}
+<div id="personal" style="display: block;">
+		   <form>
+		   <div class="form-pad">
+		    <div class="row">
+				<div class="col s12 m8 push-m4">
+				<!-- Personal info FIELDS -->
+					<div class="input-field">
+						<input id="first_name" type="text" class="validate" value="Caroline">
+						<label for="first_name" class="active">First Name</label>
+					</div>
+					<div class="input-field">
+						<input id="last_name" type="text" class="validate" value="Doe">
+						<label for="last_name" class="active">Last Name</label>
+					</div>
+					<div class="input-field">
+						<input id="phone" type="tel" class="validate" value="+1 22 333 444 555">
+						<label for="phone" class="active">Phone</label>
+					</div>
+					<div class="input-field">
+						<input id="email" type="email" class="validate" value="info(at)cretingo.com">
+						<label for="email" data-error="wrong" data-success="right" class="active">Email</label>
+					</div>
+					<div class="input-field with-note">
+						<input id="skills" type="text" class="validate" value="html, css, sass, js, php">
+						<label for="skills" class="active">Skills</label>
+						<span class="note">Please, provide comma separated list.</span>
+					</div>
+					<div class="input-field">
+						<textarea id="about" class="materialize-textarea" style="height: 66px;">Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. </textarea>
+						<label for="about" class="active">About</label>
+					</div>
+					<div class="input-field">
+						<input placeholder="http://www.creatingo.com" id="weburl" type="text" class="validate">
+						<label for="weburl" class="active">Website Url</label>
+					</div>
+				</div>
+				<div class="col s12 m4 pull-m8">
+					<!-- Personal info PROFILE PHOTO -->
+				  <div class="form-pad center-align">
+					<img class="responsive-img circle" src="{%static 'assets/img/operator-female-smile_sml01.jpg'  %}">
+					<div class="file-field input-field">
+						<div class="btn no-float primary-color">
+							<i class="material-icons large">file_upload</i>
+							<input type="file">
+						</div>
+						<div class="file-path-wrapper hide">
+							<input class="file-path validate center-align" type="text">
+						</div>
+					</div>
+				  </div>
+				</div>
+			</div>
+			<!-- Save Cancel -->
+			<div class="row">
+				<div class="col s12 m8 push-m4 buttons">
+				   <button class="waves-effect waves-light btn" type="submit" name="action1"><i class="material-icons right">done</i>Save changes</button>
+				   <button class="waves-effect waves-light btn blue-grey lighten-2" type="submit" name="action2"><i class="material-icons right">clear</i>Cancel</button>
+			    </div>
+			</div>
+			</div>
+		   </form>
+		   </div>
+
+
+
+
+
+
+

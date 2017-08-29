@@ -3,41 +3,40 @@
 {% block content %}
     <main>
       <div class="container">
-
+        <h1 class="thin">Cadastrar</h1>
         <div class="section">
-
-          <div class="row"
+          <div class="row" >
             <form class="col s12">
               <div class="row">
                 <div class="input-field col s12">
-                  <input placeholder="Nome" id="first_name" type="text" class="validate">
+                  <input id="name" name="name" type="text" class="validate">
                   <label for="first_name">Nome</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <input placeholder="Tipo" id="first_name" type="text" class="validate">
+                  <input  id="first_name" name="type" type="text" class="validate">
                   <label for="first_name">Tipo</label>
                 </div>
              </div>
              <div class="row">
                 <div class="input-field col s12">
-                    <textarea placeholder="Descrição" id="textarea1" class="materialize-textarea"></textarea>
+                    <textarea  id="textarea1" name="description" class="materialize-textarea"></textarea>
                     <label for="textarea1">Descrição</label>
                 </div>
              </div>
 
-             <div class="row">
+             <!-- <div class="row">
                  <div class="file-field input-field">
                       <div class="btn">
                         <span>File</span>
-                        <input type="file">
+                        <input name="file" type="file">
                       </div>
                       <div class="file-path-wrapper">
-                        <input class="file-path validate" type="text">
+                        <input name="pathFile" class="file-path validate" type="text">
                       </div>
                  </div>
-             </div>
+             </div> -->
              <br/>
              <div class="row">
                  <a  href="{% url 'classifier' %}" class="waves-effect waves-light btn-large">Voltar</a>

@@ -1,0 +1,47 @@
+{% extends 'layout/base.html' %}
+
+{% block content %}
+    <main>
+      <div class="container">
+        <h1 class="thin">Minha conta</h1>
+        <div class="section">
+          <div class="row">
+              <div class="col s12">
+                  <div class="z-depth-1">
+                    <ul class="tabs account" style="width: 100%;">
+                        <li class="col s4 tab">
+                            <a class="active" href="#personal">Profile</a>
+                        </li>
+                        <li class="col s4 tab">
+                            <a href="#password">Password</a>
+                        </li>
+                        <li class="col s4 tab">
+                            <a href="#privacy" class="active">Privacy</a>
+                        </li>
+                        <div class="indicator" style="right: 1px; left: 592px;">
+
+                        </div>
+                    </ul>
+                  </div>
+              </div>
+
+              <div class="col s12">
+                 <div class="card-panel no-padding">
+		            <!-- Personal tab START -->
+		                {% include 'account/elements/profile.html' %}
+		            <!-- Personal tab END -->
+
+                    <!-- Password tab START -->
+                        {% include 'account/elements/password.html' %}
+		            <!-- Password tab END -->
+
+		            <!-- Privacy tab START -->
+                        {% include 'account/elements/privacy.html' %}
+                    <!-- Privacy tab END -->
+		        </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </main>
+{% endblock content %}
