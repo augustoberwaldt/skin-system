@@ -15,8 +15,11 @@
 
         $(document).ready(function(){
             // Basic
-            $('.dropify').dropify();
+            $('.dropify').dropify({
+               messages: {
+                'default': 'Arraste e solte um arquivo aqui ou clique em'}
+            });
 
-                   });
+        });
 
 </script>

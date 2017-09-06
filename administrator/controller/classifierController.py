@@ -37,7 +37,6 @@ def add(request):
             uploaded_file_url = fs.url(filenameP)
             uploaded_file_url = fs.url(filenameN)
 
-
             createClassifirWatson(namefile)
             form.save()
 
