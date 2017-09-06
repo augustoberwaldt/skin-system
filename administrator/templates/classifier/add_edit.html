@@ -2,49 +2,70 @@
 
 {% block content %}
     <main>
-      <div class="container">
-        <h1 class="thin">Cadastrar</h1>
-        <div class="section">
-          <div class="row" >
-            <form class="col s12">
-              <div class="row">
-                <div class="input-field col s12">
-                  <input id="name" name="name" type="text" class="validate">
-                  <label for="first_name">Nome</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <input  id="first_name" name="type" type="text" class="validate">
-                  <label for="first_name">Tipo</label>
-                </div>
-             </div>
-             <div class="row">
-                <div class="input-field col s12">
-                    <textarea  id="textarea1" name="description" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Descrição</label>
-                </div>
-             </div>
+        <div class="container">
+            <h1 class="thin">Cadastrar</h1>
+            <div class="section">
+                <div class="card-panel no-padding">
+                    <div class="form-pad">
+                    <div class="row" >
+                        <form enctype="multipart/form-data" method="post" action="{% url 'add' %}" class="col s12">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="input-field col s12">
+                                  <input id="name" name="name" type="text" class="validate">
+                                  <label for="first_name">Nome</label>
+                                </div>
+                            </div>
+                           <div class="row">
+                                 <div class="input-field col s12">
+                                   <input  id="first_name" name="type" type="text" class="validate">
+                                   <label for="first_name">Tipo</label>
+                                 </div>
+                           </div>
+                           <div class="row">
+                                 <div class="input-field col s12">
+                                    <textarea  id="textarea1" name="description" class="materialize-textarea"></textarea>
+                                    <label for="textarea1">Descrição</label>
+                                </div>
+                           </div>
 
-             <!-- <div class="row">
-                 <div class="file-field input-field">
-                      <div class="btn">
-                        <span>File</span>
-                        <input name="file" type="file">
-                      </div>
-                      <div class="file-path-wrapper">
-                        <input name="pathFile" class="file-path validate" type="text">
-                      </div>
-                 </div>
-             </div> -->
-             <br/>
-             <div class="row">
-                 <a  href="{% url 'classifier' %}" class="waves-effect waves-light btn-large">Voltar</a>
-                 <button class="btn waves-effect waves-light btn-large" type="submit" name="action">
-                     Salvar
-                 </button>
-             </div>
-            </form>
+                           <div class="row">
+                             <label for="fileNegative">Arquivo com Imagens para classificar</label>
+                             <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>File</span>
+                                    <input name="filePositive" type="file">
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text">
+                                  </div>
+                             </div>
+                           </div>
+                           <div class="row">
+                             <label for="fileNegative">Arquivo com Imagens Negativas</label>
+                             <div class="file-field input-field">
+                                  <div class="btn">
+                                    <span>File</span>
+                                    <input id="fileNegative" name="fileNegative" type="file">
+                                  </div>
+                                  <div class="file-path-wrapper">
+                                    <input class="file-path validate" type="text">
+                                  </div>
+                             </div>
+                           </div>
+
+                           <br/>
+                           <div class="row">
+                               <a  href="{% url 'classifier' %}" class="waves-effect waves-light btn-large">
+                                   Voltar
+                               </a>
+                               <button class="btn waves-effect waves-light btn-large" type="submit" name="action">
+                                     Salvar
+                               </button>
+                             </div>
+                        </form>
+                    </div>
+               </div>
           </div>
         </div>
       </div>

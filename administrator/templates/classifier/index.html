@@ -24,15 +24,18 @@
                         <tbody>
                         {% for disease in diseases %}
                             <tr>
-                              <td>0001</td>
-                              <td>psoríase</td>
-                              <td>test</td>
+                              <td>{{ disease.id }}</td>
+                              <td> {{ disease.name }} </td>
+                              <td> {{ disease.type }} </td>
                               <td><i class="material-icons">edit</i></td>
                             </tr>
                         {% endfor %}
                         </tbody>
                   </table>
-                  {% include 'layout/pagination.html' %}
+                  {% if diseases.has_other_pages %}
+                    {% include 'layout/pagination.html' %}
+                  {%endif  %}
+
                  </div>
               </div>
             <div class="row">

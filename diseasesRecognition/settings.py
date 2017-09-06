@@ -13,10 +13,15 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
@@ -101,10 +106,10 @@ DATABASES = {
 
         #'ENGINE': 'django.db.backends.mysql',
         #'NAME': 'skinsistem',
-        #'USER': 'skin',
-        #'PASSWORD': 'skin123',
-        #'HOST': '207.154.233.207',  # Or an IP Address that your DB is hosted on
-        #'PORT': '3306',
+        #'USER': 'root',
+        #'PASSWORD': '12345',
+        #'HOST': 'http://localhot',  # Or an IP Address that your DB is hosted on
+       # 'PORT': '3306',
 
     }
 }

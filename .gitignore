@@ -3,4 +3,4 @@ venv
 *.pyc
 staticfiles
 diseasesRecognition/*.pyc
-
+media
