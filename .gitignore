@@ -4,3 +4,4 @@ venv
 staticfiles
 diseasesRecognition/*.pyc
 media
+node_modules
