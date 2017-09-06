@@ -19,5 +19,9 @@ class Watson():
                 print(ret)
 
 
+    def deleteClassifier(self, id):
+        self.visual_recognition.delete_classifier(classifier_id=id)
 
 
+    def classifier(self,image):
+        self.visual_recognition.classify(images_url=image)
