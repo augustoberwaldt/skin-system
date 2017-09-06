@@ -45,6 +45,5 @@ def add(request):
 
 
 def createClassifirWatson(name):
-   print ''
-   watson = Watson.Watson();
+   watson = Watson.Watson()
    watson.createClassifier(name)
