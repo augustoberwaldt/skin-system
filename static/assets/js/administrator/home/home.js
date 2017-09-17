@@ -26,25 +26,28 @@ $(document).ready(function(){
                   '<div class="determinate" style="width: {{porc}}%"></div>'+
                 '</div>'+
              '</li>';
+         var ulTasks = $('#tasks').find('ul');
 
-         $.ajax({
-            url: 'classifier/getDisease',
-            data: form,
-            processData: false,
-            contentType: false,
-            type: 'POST',
-            success: function (data) {
-               var ulTasks = $('#tasks').find('ul');
-               var classes = data.images[0].classifiers[0].classes;
-               $.each(classes, function (index, value) {
-                   console.log(index, value);
-                   ulTasks.append(html.replace('{{title}}', value.class)
-                       .replace('{{porc}}', Math.ceil(value.score * 100))
-                       .replace('{{porc}}', Math.ceil(value.score * 100))
-                   );
-               });
-            }
-        });
+         if (ulTasks.find('li').size() == 1) {
+             $.ajax({
+                 url: 'classifier/getDisease',
+                 data: form,
+                 processData: false,
+                 contentType: false,
+                 type: 'POST',
+                 success: function (data) {
+
+                     var classes = data.images[0].classifiers[0].classes;
+                     $.each(classes, function (index, value) {
+                         ulTasks.append(html.replace('{{title}}', value.class)
+                             .replace('{{porc}}', Math.ceil(value.score * 100))
+                             .replace('{{porc}}', Math.ceil(value.score * 100))
+                         );
+                     });
+
+                 }
+             });
+         }
     })
 
 });
