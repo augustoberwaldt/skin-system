@@ -28,8 +28,34 @@ class Watson():
 
 
     def deleteClassifier(self, id):
+        """
+           deleteClassifier
+           :param id :
+        """
         self.visual_recognition.delete_classifier(classifier_id=id)
 
 
-    def classifier(self,image):
-        self.visual_recognition.classify(images_url=image)
+    def classifier(self, image):
+        """
+           :param image :
+        """
+        path = 'https://belezanoardotnet.files.wordpress.com/2016/05/psoriaz-4_1.jpeg';
+        return json.dumps(self.visual_recognition.classify(images_url=path))
+
+
+
+    def listClassifiers(self):
+        """
+
+        """
+        return json.dumps(self.visual_recognition.list_classifiers(), indent=2)
+
+
+
+class Parser():
+    def __init__(self):
+        """
+        """
+
+    def parseResponseClassifier(self, response):
+        return response

@@ -5,10 +5,13 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 from administrator.formsModel import FormDisease
 from administrator.model import Disease
-from administrator.service import Watson
-from django.conf import settings
+from administrator.service import Watson , Upload
+from django.http import HttpResponse
+
+
 
 def index(request):
+
     list_diseases = Disease.Disease.objects.all()
     paginator = Paginator(list_diseases, 25)
     page = request.GET.get('page')
@@ -40,9 +43,23 @@ def add(request):
             createClassifirWatson(namefile)
             form.save()
 
-    return render(request,'classifier/add_edit.html',{})
+    return render(request, 'classifier/add_edit.html',{})
 
 
 def createClassifirWatson(name):
-   watson = Watson.Watson()
-   watson.createClassifier(name)
+    watson = Watson.Watson()
+    watson.createClassifier(name)
+
+
+def getDisease(request):
+    file = request.FILES['fileUpload']
+    fs = FileSystemStorage()
+    fs.save(file.name, file)
+    up = Upload.Upload()
+    up.setDir("skin-system")
+    up.process(file.name)
+
+    watson = Watson.Watson()
+    response = watson.classifier(file.name);
+    parse = Watson.Parser();
+    return HttpResponse(parse.parseResponseClassifier(response), content_type="application/json")

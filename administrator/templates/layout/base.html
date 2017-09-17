@@ -23,6 +23,8 @@
 
     <input type="hidden" id="pathPage" value="{{ request.path }}"/>
 </body>
-    {% include 'layout/scripts.html' %}
     {% include 'layout/search-popup.html' %}
+    {% include 'layout/scripts.html' %}
+    {% block contentJs %} {% endblock %}
+
 </html>

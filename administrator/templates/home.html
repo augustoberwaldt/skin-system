@@ -1,20 +1,21 @@
 {% extends 'layout/base.html' %}
+{% load staticfiles %}
 
 {% block content %}
     <main>
       <div class="container">
 
         <div class="section">
-
+           {% csrf_token %}
           <div class="row">
               <div style=" height: 100% !important;" class="col s12">
-                 <input type="file"  id="input-file-now" class="dropify" data-default-file="">
-
+                 <input type="file"  name="file" id="input-file-now" class="dropify" data-default-file="">
               </div>
+
           </div>
           <div class="row">
                  <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-                      <a href="#" class="btn-floating btn-large primary-color">
+                      <a href="#" id="process" class="btn-floating btn-large primary-color">
                           <i class="material-icons">search</i>
                       </a>
                  </div>
@@ -26,34 +27,10 @@
                   <div id="tasks" class="card hoverable">
                     <ul class="collection with-header">
                       <li class="collection-header primary-color">
-                        <h5 class="light secondary-color-text">Resultado da Análise</h5>
+                        <h5 class="light secondary-color-text">Resultado da Análise </h5>
                       </li>
-                      <li class="collection-item in-progress">
-                        <p>Create e-commerce cards<br>
-                          <span class="badge static pink accent-4">UI/UX</span> <span class="secondary-content">25%</span> </p>
-                        <div class="progress">
-                          <div class="determinate" style="width: 25%"></div>
-                        </div>
-                      </li>
-                      <li class="collection-item in-progress">
-                        <p>Implement another smart JS<br>
-                          <span class="badge static blue">Development</span> <span class="secondary-content">67%</span> </p>
-                        <div class="progress">
-                          <div class="determinate" style="width: 67%"></div>
-                        </div>
-                      </li>
-                      <li class="collection-item finished">
-                        <p>SASS code revision<br>
-                          <span class="badge static blue">Development</span> <span class="secondary-content"><i class="material-icons">check</i></span> </p>
-                      </li>
-                      <li class="collection-item finished">
-                        <p>Extra additions<br>
-                          <span class="badge static amber accent-3">Bonus</span> <span class="secondary-content"><i class="material-icons">check</i></span> </p>
-                      </li>
-                      <li class="collection-item finished">
-                        <p>Extend code blocks notations<br>
-                          <span class="badge static blue">Development</span> <span class="secondary-content"><i class="material-icons">check</i></span> </p>
-                      </li>
+
+
                     </ul>
                   </div>
                 </div>
@@ -62,3 +39,8 @@
       </div>
     </main>
 {% endblock content %}
+{% block contentJs %}
+
+    <script type="text/javascript" src="{%  static 'assets/js/administrator/home/home.js' %}"></script>
+
+{% endblock contentJs %}
