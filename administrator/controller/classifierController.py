@@ -7,9 +7,9 @@ from administrator.formsModel import FormDisease
 from administrator.model import Disease
 from administrator.service import Watson , Upload
 from django.http import HttpResponse
+from django.contrib.auth.decorators import login_required
 
-
-
+@login_required
 def index(request):
 
     list_diseases = Disease.Disease.objects.all()
@@ -25,6 +25,7 @@ def index(request):
 
     return render(request, 'classifier/index.html', {'diseases': diseases})
 
+@login_required
 def add(request):
 
     if request.method == "POST":
@@ -50,16 +51,16 @@ def createClassifirWatson(name):
     watson = Watson.Watson()
     watson.createClassifier(name)
 
-
+@login_required
 def getDisease(request):
     file = request.FILES['fileUpload']
     fs = FileSystemStorage()
     fs.save(file.name, file)
     up = Upload.Upload()
     up.setDir("skin-system")
-    up.process(file.name)
+    uploaded = up.process(file.name)
 
     watson = Watson.Watson()
-    response = watson.classifier(file.name);
+    response = watson.classifier(uploaded.get('url'));
     parse = Watson.Parser();
     return HttpResponse(parse.parseResponseClassifier(response), content_type="application/json")

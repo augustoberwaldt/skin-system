@@ -12,54 +12,57 @@
   <div class="container valign">
    <div id="login" class="row">
         <div class="col s12 m8 l6 offset-m2 offset-l3 card-panel">
-           <form class="login-form">
+           <form  action="{% url 'account/add' %}" class="login-form" method="post">
+                {% csrf_token %}
                 <div class="row primary-color form-header">
-                  <div class="col s4">
-
-                  </div>
+                  <div class="col s4"></div>
                   <div class="col s3 right-align">
                     <h4 class="light white-text">Register</h4>
                   </div>
                 </div>
                 <div class="form-body">
-                <div class="row">
-                  <div class="input-field col s12">
-                    <i class="mdi-social-person prefix"></i>
-                    <input id="username" type="text" class="validate">
-                    <label for="username" class="center-align">Username</label>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="input-field col s12">
-                    <i class="mdi-communication-email prefix"></i>
-                    <input id="email" type="email" class="validate">
-                    <label for="email" class="center-align">Email</label>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="input-field col s12">
-                    <i class="mdi-action-lock prefix"></i>
-                    <input id="password" type="password" class="validate">
-                    <label for="password">Password</label>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="input-field col s12">
-                    <i class="mdi-action-lock prefix"></i>
-                    <input id="password-again" type="password">
-                    <label for="password-again">Re-type password</label>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="input-field col s12">
-                    <a href="register.html" class="btn-large waves-effect waves-light col s12">Register Now</a>
-                  </div>
-                  <div class="input-field col s12">
-                    <p class="center medium-small sign-up">Already registered?
-                      <a href="{% url 'login' %}" >Login</a>
-                    </p>
-                  </div>
-                </div>
+                     <div class="row">
+                      <div class="input-field col s12">
+                        <i class="mdi-social-person prefix"></i>
+                            {{ form.first_name }}
+                            {{ form.error_messages }}
+                        <label for="username" class="center-align">Name</label>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="mdi-social-person prefix"></i>
+                            {{ form.username }}
+                            {{ form.error_messages }}
+                        <label for="username" class="center-align">Email</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="mdi-action-lock prefix"></i>
+                         {{ form.password }}
+                         {{ form.error_messages }}
+                        <label for="password">Password</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <i class="mdi-action-lock prefix"></i>
+                        <input id="password-again" name="password-again" type="password">
+                        <label for="password-again">Re-type password</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <button type="submit" class="btn-large waves-effect waves-light col s12">Register Now</button>
+                      </div>
+                      <div class="input-field col s12">
+                        <p class="center medium-small sign-up">Already registered?
+                          <a href="{% url 'login' %}" >Login</a>
+                        </p>
+                      </div>
+                    </div>
               </div>
            </form>
         </div>

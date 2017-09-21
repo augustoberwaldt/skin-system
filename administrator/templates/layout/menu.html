@@ -51,21 +51,24 @@
       <li>
           <a href="{% url 'home' %}" href="#" class="waves-effect">
               <i class="mdi-action-dashboard left"></i>
-              <span>Dashboard</span>
+              <span>Home</span>
           </a>
       </li>
-      <li>
-          <a href="{% url 'classifier' %}"  class="waves-effect">
-              <i class="mdi-action-extension left"></i>
-              <span>Classificador</span>
-          </a>
-      </li>
-      <li>
-          <a href="{% url 'home' %}" class="waves-effect">
-              <i class="mdi-action-description left"></i>
-              <span>Usuários</span></span>
-          </a>
-      </li>
+
+      {% if  user.is_superuser %}
+          <li>
+              <a href="{% url 'classifier' %}"  class="waves-effect">
+                  <i class="mdi-action-extension left"></i>
+                  <span>Classificador</span>
+              </a>
+          </li>
+          <li>
+              <a href="{% url 'home' %}" class="waves-effect">
+                  <i class="mdi-action-description left"></i>
+                  <span>Usuários</span></span>
+              </a>
+          </li>
+      {% endif %}
     </ul>
   </div>
 </header>

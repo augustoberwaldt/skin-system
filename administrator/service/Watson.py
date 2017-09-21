@@ -39,8 +39,7 @@ class Watson():
         """
            :param image :
         """
-        path = 'https://belezanoardotnet.files.wordpress.com/2016/05/psoriaz-4_1.jpeg';
-        return json.dumps(self.visual_recognition.classify(images_url=path))
+        return json.dumps(self.visual_recognition.classify(images_url=image))
 
 
 
