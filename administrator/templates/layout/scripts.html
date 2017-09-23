@@ -9,4 +9,36 @@
 <script type="text/javascript" src="{%  static 'assets/js/materialize.min.js' %}"></script>
 <script type="text/javascript" src="{%  static 'assets/js/initialize.js' %}"></script>
 <script type="text/javascript" src="{%  static 'assets/js/dropify.min.js' %}"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
+<script>
+
+$(document).ready(function(){
+    toastr.options = {
+      "closeButton": false,
+      "debug": false,
+      "newestOnTop": false,
+      "progressBar": false,
+      "positionClass": "toast-top-center",
+      "preventDuplicates": false,
+      "onclick": null,
+      "showDuration": "400",
+      "hideDuration": "1000",
+      "timeOut": "5000",
+      "extendedTimeOut": "1000",
+      "showEasing": "swing",
+      "hideEasing": "linear",
+      "showMethod": "fadeIn",
+      "hideMethod": "fadeOut"
+    };
+
+
+    $('.messages li').each(function (index, value) {
+            console.log($(value).text());
+            var json  = JSON.parse($(value).text());
+            console.log(json);
+            toastr[json.type](json.title.trim(), json.message.trim());
+    })
+
+});
+</script>

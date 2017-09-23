@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import  authenticate, login, logout
 from administrator.formsModel import FormUser
-from django.contrib.auth.hashers import make_password
-
+from django.contrib import messages
+import json
 def do_login(request):
 
     if request.method  == 'POST' :
@@ -14,6 +14,10 @@ def do_login(request):
         if user is not None :
             login(request,user)
             return redirect('/admin/home')
+        else :
+            reponse = {'title' : 'Dados invalidos ! ', 'message' : 'Tente novamente.', 'type' : 'error' }
+
+            messages.add_message(request, messages.INFO, json.dumps(reponse))
 
     return render(request, 'auth/login.html')
 
@@ -28,7 +32,12 @@ def register(request):
     if request.method == 'POST':
         if form.is_valid():
             form.save()
+            reponse = {'title': 'Success ', 'message': 'Cadastro realizado !', 'type': 'success'}
+            messages.add_message(request, messages.INFO, json.dumps(reponse))
             return redirect('/admin/register')
+        else :
+            reponse = {'title': 'Dados invalidos ! ', 'message': 'Tente novamente.', 'type': 'error'}
+            messages.add_message(request, messages.INFO, json.dumps(reponse))
 
     return render(request, 'auth/register.html', context)
 
