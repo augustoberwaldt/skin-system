@@ -1,0 +1,46 @@
+{% extends 'layout/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <main>
+      <div class="container">
+<h1 class="thin">Listagem de Usuários</h1>
+        <div class="section">
+            {% include 'layout/filter.html' %}
+        </div>
+        <div class="section">
+          <div class="row">
+              <div class="col s12">
+
+                  <table class="striped" >
+                        <thead style="border-top: 1px solid #cee4ee;">
+                          <tr>
+                              <th data-field="codigo">Código</th>
+                              <th data-field="name">Nome</th>
+                              <th data-field="email">Email</th>
+                              <th> </th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                        {% for user in users %}
+                            <tr>
+                              <td> {{ user.id }}</td>
+                              <td> {{ user.first_name }} </td>
+                              <td> {{ user.email }} </td>
+                              <td><i class="material-icons">edit</i></td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                  </table>
+                  {% if users.has_other_pages %}
+                    {% include 'layout/pagination.html' %}
+                  {%endif  %}
+
+                 </div>
+              </div>
+            
+          </div>
+      </div>
+    </main>
+{% endblock content %}

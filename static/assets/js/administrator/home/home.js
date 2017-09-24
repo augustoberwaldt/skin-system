@@ -36,6 +36,7 @@ $(document).ready(function(){
              contentType: false,
              type: 'POST',
              success: function (data) {
+                 $("#taskHeader").removeClass("displaynone");
                  var ulTasks = $('#tasks').find('ul');
                  ulTasks.find('li').nextAll('li').remove();
                  var classes = data.images[0].classifiers[0].classes;
