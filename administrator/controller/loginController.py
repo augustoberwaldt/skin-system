@@ -13,7 +13,7 @@ def do_login(request):
 
         if user is not None :
             login(request,user)
-            return redirect('/admin/home')
+            return redirect('/app/home')
         else :
             reponse = {'title' : 'Dados invalidos ! ', 'message' : 'Tente novamente.', 'type' : 'error' }
 
@@ -34,7 +34,7 @@ def register(request):
             form.save()
             reponse = {'title': 'Success ', 'message': 'Cadastro realizado !', 'type': 'success'}
             messages.add_message(request, messages.INFO, json.dumps(reponse))
-            return redirect('/admin/register')
+            return redirect('/app/register')
         else :
             reponse = {'title': 'Dados invalidos ! ', 'message': 'Tente novamente.', 'type': 'error'}
             messages.add_message(request, messages.INFO, json.dumps(reponse))
@@ -44,6 +44,6 @@ def register(request):
 
 def do_logout(request):
     logout(request)
-    return redirect('/admin/')
+    return redirect('/app/')
 
 

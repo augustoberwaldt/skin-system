@@ -6,8 +6,7 @@ from website import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    url(r'^webservice/', include('webService.urls')),
-    url(r'^admin/', include('administrator.urls')),
+    url(r'^app/', include('administrator.urls')),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

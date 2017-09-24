@@ -22,7 +22,7 @@
         </ul>
     {% endif %}
 
-    {% if request.path != '/admin/' and request.path != '/admin/register' and request.path != '/admin/resetPass'   %}
+    {% if request.path != '/app/' and request.path != '/app/register' and request.path != '/app/resetPass'   %}
         {% include 'layout/menu.html' %}
     {% endif %}
 
@@ -33,5 +33,5 @@
     {% include 'layout/search-popup.html' %}
     {% include 'layout/scripts.html' %}
     {% block contentJs %} {% endblock %}
-
+    <div style="display:none;" id="preloader"></div>
 </html>
