@@ -46,11 +46,13 @@ SECRET_KEY = 'g0oy@b9vxa6zn$9o^j5zzj^xprjxf-t-iw0)0bj9cprvoiu8r%'
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
+ALLOWED_HOSTS = ["*"]
+
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-ALLOWED_HOSTS = ['*']
-
+if os.environ.get('DJANGO_DEBUG'):
+    DEBUG = True
+else:
+    DEBUG = False
 
 # Application definition
 
@@ -61,7 +63,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework_swagger',
     'administrator',
     'website'
 ]
