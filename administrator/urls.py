@@ -3,7 +3,9 @@ from .controller import loginController,\
      classifierController ,\
      accountController,\
      homeController, \
-     userController
+     userController,\
+     errorController
+
 
 
 urlpatterns = [
@@ -19,4 +21,8 @@ urlpatterns = [
     url(r'^classifier/add', classifierController.add, name='add'),
     url(r'^classifier/getDisease', classifierController.getDisease, name='getDisease'),
 ]
+
+
+
+handler404 = 'administrator.controller.errorController.page_not_found'
 
