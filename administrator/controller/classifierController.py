@@ -13,7 +13,7 @@ from django.contrib.auth.decorators import login_required
 def index(request):
 
     list_diseases = Disease.Disease.objects.all()
-    paginator = Paginator(list_diseases, 25)
+    paginator = Paginator(list_diseases, 5)
     page = request.GET.get('page')
 
     try:
@@ -64,3 +64,7 @@ def getDisease(request):
     response = watson.classifier(uploaded.get('url'));
     parse = Watson.Parser();
     return HttpResponse(parse.parseResponseClassifier(response), content_type="application/json")
+
+def removeClassifier(request):
+    watson = Watson.Watson()
+    return watson.deleteClassifier(request.DELETE['id']);

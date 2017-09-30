@@ -14,19 +14,12 @@
 <script>
 
 $(document).ready(function(){
-
-    $('#preloader').on('ajaxStart', function(){
-        $(this).show();
-    }).on('#ajaxStop', function(){
-        $(this).hide();
-    });
-
     toastr.options = {
       "closeButton": false,
       "debug": false,
       "newestOnTop": false,
       "progressBar": false,
-      "positionClass": "toast-top-center",
+      "positionClass": "toast-bottom-full-width",
       "preventDuplicates": false,
       "onclick": null,
       "showDuration": "400",

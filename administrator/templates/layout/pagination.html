@@ -1,20 +1,38 @@
 <div class="center-align row">
     <ul class="pagination">
-      <li class="disabled">
-          <a href="#!">
-              <i class="material-icons">chevron_left</i>
-          </a>
-      </li>
-      {% for i in users.paginator.page_range %}
+       {% if paginator.has_previous %}
+           <li class="waves-effect">
+              <a href="?page={{ paginator.previous_page_number }}">
+                  <i class="material-icons">chevron_left</i>
+              </a>
+          </li>
+      {% else %}
+          <li class="disabled">
+              <span>
+                  <i class="material-icons">chevron_left</i>
+              </span>
+          </li>
 
-      <li class="active">
-          <a href="#!">1</a>
-      </li>
+      {% endif %}
 
-      <li class="waves-effect">
-          <a href="#!">
+      {% for i in paginator.page_range %}
+          <li class="active">
+           <a href="?page={{ i }}">{{ i }}</a>
+          </li>
+      {% endfor %}
+
+     {% if paginator.has_next %}
+        <li class="waves-effect">
+          <a href="?page={{ paginator.next_page_number }}">
               <i class="material-icons">chevron_right</i>
           </a>
-      </li>
+        </li>
+     {% else %}
+         <li class="disabled">
+           <span>
+               <i class="material-icons">chevron_right</i>
+           </span>
+         </li>
+     {% endif %}
     </ul>
 </div>

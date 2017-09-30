@@ -1,5 +1,5 @@
 {% extends 'layout/base.html' %}
-
+{% load staticfiles %}
 {% block content %}
     <main>
       <div class="container">
@@ -15,8 +15,8 @@
                         <thead style="border-top: 1px solid #cee4ee;">
                           <tr>
                               <th data-field="codigo">Código</th>
-                              <th data-field="name">Nome</th>
-                              <th data-field="type">Tipo</th>
+                              <th colspan="4" data-field="name">Nome</th>
+                              <th colspan="6" data-field="type">Tipo</th>
                               <th> </th>
                           </tr>
                         </thead>
@@ -24,28 +24,40 @@
                         <tbody>
                         {% for disease in diseases %}
                             <tr>
-                              <td>{{ disease.id }}</td>
-                              <td> {{ disease.name }} </td>
-                              <td> {{ disease.type }} </td>
-                              <td><i class="material-icons">edit</i></td>
+                              <td> {{ disease.id }}</td>
+                              <td colspan="4"> {{ disease.name }} </td>
+                              <td colspan="6" > {{ disease.type }} </td>
+                              <td>
+                                  <i class="material-icons">edit</i>
+                                  &nbsp;
+
+                                  <i class="material-icons remove">delete</i>
+
+                              </td>
+
                             </tr>
                         {% endfor %}
                         </tbody>
                   </table>
                   {% if diseases.has_other_pages %}
-                    {% include 'layout/pagination.html' %}
-                  {%endif  %}
+                    {% include "layout/pagination.html" with paginator=diseases.paginator %}
+                  {%endif %}
 
                  </div>
               </div>
-            <div class="row">
+              <div class="row">
                  <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
                       <a href="{% url  'add' %}" class="btn-floating btn-large primary-color">
                           <i class="material-icons">add</i>
                       </a>
                  </div>
-            </div>
+              </div>
           </div>
       </div>
     </main>
 {% endblock content %}
+{% block contentJs %}
+
+    <script type="text/javascript" src="{%  static 'assets/js/administrator/classifier/index.js' %}"></script>
+
+{% endblock contentJs %}

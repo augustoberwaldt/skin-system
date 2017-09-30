@@ -34,7 +34,7 @@
                         </tbody>
                   </table>
                   {% if users.has_other_pages %}
-                    {% include 'layout/pagination.html' %}
+                    {% include 'layout/pagination.html' with paginator=users.paginator %}
                   {%endif  %}
 
                  </div>

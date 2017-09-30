@@ -19,6 +19,7 @@ urlpatterns = [
     url(r'^user', userController.index, name='user'),
     url(r'^classifier$', classifierController.index, name='classifier'),
     url(r'^classifier/add', classifierController.add, name='add'),
+    url(r'^classifier/delete', classifierController.add, name='delete'),
     url(r'^classifier/getDisease', classifierController.getDisease, name='getDisease'),
 ]
 
