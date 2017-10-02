@@ -1,13 +1,14 @@
 from django.core.files.storage import FileSystemStorage
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-
 
 from administrator.formsModel import FormDisease
 from administrator.model import Disease
 from administrator.service import Watson , Upload
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
+import json
 
 @login_required
 def index(request):
@@ -41,7 +42,8 @@ def add(request):
             uploaded_file_url = fs.url(filenameP)
             uploaded_file_url = fs.url(filenameN)
 
-            createClassifirWatson(namefile)
+            ret = createClassifirWatson(namefile)
+            form.setClassfierId(ret['classifier_id'])
             form.save()
 
     return render(request, 'classifier/add_edit.html',{})
@@ -49,7 +51,8 @@ def add(request):
 
 def createClassifirWatson(name):
     watson = Watson.Watson()
-    watson.createClassifier(name)
+    return watson.createClassifier(name)
+
 
 @login_required
 def getDisease(request):
@@ -65,6 +68,23 @@ def getDisease(request):
     parse = Watson.Parser();
     return HttpResponse(parse.parseResponseClassifier(response), content_type="application/json")
 
+@login_required
 def removeClassifier(request):
     watson = Watson.Watson()
-    return watson.deleteClassifier(request.DELETE['id']);
+
+    try:
+        disease = Disease.Disease.objects.get(pk=request.GET['id'])
+        watson.deleteClassifier(disease.classifier_id)
+        reponse = {'title': 'Registro deletado !', 'message': '', 'type': 'success'}
+        messages.add_message(request, messages.SUCCESS, json.dumps(reponse))
+    except Exception :
+        reponse = {'title': 'ops ocorreu um erro', 'message': '', 'type': 'error'}
+        messages.add_message(request, messages.ERROR, json.dumps(reponse))
+
+    return redirect('/app/classifier')
+
+
+@login_required
+def getAllClassfiers(request):
+    watson = Watson.Watson()
+    return HttpResponse(watson.listClassifiers(), content_type="application/json")
