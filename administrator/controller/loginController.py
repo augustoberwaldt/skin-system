@@ -19,6 +19,9 @@ def do_login(request):
 
             messages.add_message(request, messages.INFO, json.dumps(reponse))
 
+    if request.user.is_authenticated():
+        return redirect('/app/home')
+    
     return render(request, 'auth/login.html')
 
 def resetPass(request):
