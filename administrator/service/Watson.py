@@ -1,9 +1,14 @@
 from os.path import dirname, join
 from watson_developer_cloud import VisualRecognitionV3
 import json
-
+import logging
+import requests
+import urllib
+logger = logging.getLogger()
 class Watson():
-    KEY_API = 'b4f3dd2ed8cc318ded9dca6db19dfc38f7287491'
+
+    KEY_API = '5f1b04ca03706f380cda056c1a5768093a15a309'
+    URI = 'https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classifiers/'
 
     def __init__(self):
         """
@@ -24,6 +29,7 @@ class Watson():
 
             ret = self.visual_recognition.create_classifier(
             name, disease_positive_examples=positive, negative_examples = negative)
+
             return ret
 
 
@@ -39,7 +45,7 @@ class Watson():
         """
            :param image :
         """
-        return json.dumps(self.visual_recognition.classify(images_url=image))
+        return json.dumps(self.visual_recognition.classify(images_url=image, owners=['me']))
 
 
 
@@ -50,11 +56,29 @@ class Watson():
         return json.dumps(self.visual_recognition.list_classifiers(), indent=2)
 
 
+    def updateClassifier(self, name):
+        return json.dumps({})
+
+
+
+    def prepareRequest(self, classifier,data):
+
+        requests.post(self.URI + classifier + '?api_key='+ self.KEY_API +'&version=2016-05-20', data)
+
+        return requests.json()
+
 
 class Parser():
+
     def __init__(self):
         """
         """
 
     def parseResponseClassifier(self, response):
+        print response
+        json_data = json.loads(response)
+        print  json_data["images"][0]["classifiers"]
+        #for key, value in json_data.images:
+        #    print key, value
+
         return response

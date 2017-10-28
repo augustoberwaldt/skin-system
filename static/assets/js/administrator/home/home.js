@@ -27,6 +27,11 @@ $(document).ready(function(){
                 '</div>'+
              '</li>';
 
+        var nenhum = '<li class="collection-item in-progress">' +
+                '<p> Nenhum Resultado  <br>' +
+                 
+                '</p>';
+
 
 
          $.ajax({
@@ -39,7 +44,16 @@ $(document).ready(function(){
                  $("#taskHeader").removeClass("displaynone");
                  var ulTasks = $('#tasks').find('ul');
                  ulTasks.find('li').nextAll('li').remove();
-                 var classes = data.images[0].classifiers[0].classes;
+                 console.log(data);  
+                 var classes= [];
+                 
+                 if (data.images[0].classifiers.length > 0) {
+                     classes = data.images[0].classifiers[0].classes ;
+                 } else {
+                     ulTasks.append(nenhum);
+                    
+                 }
+
                  $.each(classes, function (index, value) {
                      ulTasks.eq((index+1)).remove();
                      ulTasks.append(html.replace('{{title}}', value.class)
