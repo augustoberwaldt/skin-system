@@ -14,9 +14,11 @@ https://skin-system.herokuapp.com
 
 ### Instalação
 
-1. Faça o clone deste projeto com `git clone https://github.com/augustoberwaldt/diseases-recognition.git`
-2. Entre na pasta do projeto e instale as dependências com `pip install -r requirements.txt`
-3. Rode a aplicação com `python manager runserver`
+1. Faça instalação do conpilador do python na versão 2.7
+2. Depois de instalar o python instale o gerenciador de dependecia pip 
+3. Faça o clone deste projeto com `git clone https://github.com/augustoberwaldt/diseases-recognition.git`
+4. Entre na pasta do projeto e instale as dependências com `pip install -r requirements.txt`
+5. Rode a aplicação com `python manager runserver`
 
 
 ### Testando a aplicação
