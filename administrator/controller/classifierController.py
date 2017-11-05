@@ -88,3 +88,9 @@ def removeClassifier(request):
 def getAllClassfiers(request):
     watson = Watson.Watson()
     return HttpResponse(watson.listClassifiers(), content_type="application/json")
+
+
+@login_required
+def getInfoClassfier(request):
+    watson = Watson.Watson()
+    return HttpResponse(watson.listClassifiers(), content_type="application/json")
