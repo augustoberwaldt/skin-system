@@ -75,10 +75,7 @@ class Parser():
         """
 
     def parseResponseClassifier(self, response):
-        print response
+  
         json_data = json.loads(response)
-        print  json_data["images"][0]["classifiers"]
-        #for key, value in json_data.images:
-        #    print key, value
 
         return response
