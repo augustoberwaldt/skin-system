@@ -13,6 +13,10 @@ $(document).ready(function(){
         form.append('fileUpload', event.target.files[0]); // para apenas 1 arquivo
 
     });
+    String.prototype.capitalize = function (str) {
+     return string.sub(0, 1).toUpperCase() + str.substring(1).toLowerCase();
+    }
+
 
     $('#process').click(function(){
          form.append('csrfmiddlewaretoken', $("input[name='csrfmiddlewaretoken']").val());
@@ -44,23 +48,35 @@ $(document).ready(function(){
                  $("#taskHeader").removeClass("displaynone");
                  var ulTasks = $('#tasks').find('ul');
                  ulTasks.find('li').nextAll('li').remove();
-                 console.log(data);  
-                 var classes= [];
-                 
+                 //console.log(data);  
+          
                  if (data.images[0].classifiers.length > 0) {
-                     classes = data.images[0].classifiers[0].classes ;
+                    // console.log('im', data.images[0]); 
+                    for (value  in data.images[0].classifiers) {
+                       
+                         var classes = data.images[0].classifiers[value];
+                          
+ 
+                        
+                         $.each(classes.classes, function (index, value) {
+                           console.log(value);
+                       
+                          var c = value.class.replace('b', ' '); 
+                     
+                          ulTasks.append(html.replace('{{title}}',
+                               c.toUpperCase())
+                              .replace('{{porc}}', Math.ceil(value.score * 100))
+                              .replace('{{porc}}', Math.ceil(value.score * 100))
+                             );
+                        });
+                    }
+
                  } else {
                      ulTasks.append(nenhum);
                     
                  }
 
-                 $.each(classes, function (index, value) {
-                     ulTasks.eq((index+1)).remove();
-                     ulTasks.append(html.replace('{{title}}', value.class)
-                         .replace('{{porc}}', Math.ceil(value.score * 100))
-                         .replace('{{porc}}', Math.ceil(value.score * 100))
-                     );
-                 });
+                 
 
              }
          });

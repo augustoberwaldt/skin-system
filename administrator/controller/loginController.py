@@ -3,6 +3,7 @@ from django.contrib.auth import  authenticate, login, logout
 from administrator.formsModel import FormUser
 from django.contrib import messages
 import json
+
 def do_login(request):
 
     if request.method  == 'POST' :
@@ -47,6 +48,8 @@ def register(request):
 
 def do_logout(request):
     logout(request)
+    reponse = {'title': 'Success ', 'message': 'Saida com sucesso !', 'type': 'success'}
+    messages.add_message(request, messages.INFO, json.dumps(reponse))
     return redirect('/app/')
 
 

@@ -45,7 +45,7 @@ class Watson():
         """
            :param image :
         """
-        return json.dumps(self.visual_recognition.classify(images_url=image, owners=['me']))
+        return json.dumps(self.visual_recognition.classify(images_url = image, owners=['me'], threshold = 0.0 ))
 
 
 

@@ -51,17 +51,17 @@
             </div>
             <div class="mdl-layout__header-row site-navigation-row mdl-layout--large-screen-only">
                 <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                    <a class="mdl-navigation__link" href="index.html">Home</a>
-                    <a class="mdl-navigation__link" href="sobre.html">Sobre</a>
-                    <a class="mdl-navigation__link" href="contato.html">Contato</a>
+                    <a class="mdl-navigation__link" href="{% url 'index' %}">Home</a>
+                    <a class="mdl-navigation__link" href="{% url 'about' %}">Sobre</a>
+                    <a class="mdl-navigation__link" href="{% url 'contact' %}">Contato</a>
                 </nav>
             </div>
         </header>
         <div class="mdl-layout__drawer mdl-layout--small-screen-only">
             <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                <a class="mdl-navigation__link" href="index.html">Home</a>
-                <a class="mdl-navigation__link" href="about.html">Sobre</a>
-                <a class="mdl-navigation__link" href="contact.html">Contato</a>
+                <a class="mdl-navigation__link" href="{% url 'index' %}">Home</a>
+                <a class="mdl-navigation__link" href="{% url 'about' %}">Sobre</a>
+                <a class="mdl-navigation__link" href="{% url 'contact' %}">Contato</a>
             </nav>
         </div>
         <main class="mdl-layout__content">
@@ -104,3 +104,4 @@
 </body>
 
 </html>
+

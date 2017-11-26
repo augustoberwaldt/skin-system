@@ -5,7 +5,9 @@ from django.conf.urls.static import static
 from website import views
 
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
+    url(r'^$',views.index, name='index'),
+    url(r'^contato', views.contact, name='contact'),
+    url(r'^sobre', views.about, name='about'),
     url(r'^app/', include('administrator.urls')),
 ]
 
