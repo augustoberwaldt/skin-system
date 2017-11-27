@@ -15,6 +15,7 @@ urlpatterns = [
     url(r'^register', loginController.register, name='register'),
     url(r'^account$', accountController.index, name='account'),
     url(r'^account/update', userController.password_change, name='account/update'),
+    url(r'^account/profileUpdate', userController.change_data, name='account/profileUpdate'),
     url(r'^register/add', loginController.register,  name='account/add'),
     url(r'^home', homeController.home, name='home'),
     url(r'^user', userController.index, name='user'),

@@ -17,7 +17,7 @@
                 <div class="row primary-color form-header">
                   <div class="col s4"></div>
                   <div class="col s3 right-align">
-                    <h4 class="light white-text">Register</h4>
+                    <h4 class="light white-text">Cadastro</h4>
                   </div>
                 </div>
                 <div class="form-body">
@@ -26,13 +26,13 @@
                         <i class="mdi-social-person prefix"></i>
                             {{ form.first_name }}
                             {{ form.error_messages }}
-                        <label for="username" class="center-align">Name</label>
+                        <label for="username" class="center-align">Nome</label>
                       </div>
                     </div>
 
                     <div class="row">
                       <div class="input-field col s12">
-                        <i class="mdi-social-person prefix"></i>
+                          <i class="mdi-content-mail prefix"></i>
                             {{ form.username }}
                             {{ form.error_messages }}
                         <label for="username" class="center-align">Email</label>
@@ -43,22 +43,24 @@
                         <i class="mdi-action-lock prefix"></i>
                          {{ form.password }}
                          {{ form.error_messages }}
-                        <label for="password">Password</label>
+                        <label for="password">Senha</label>
                       </div>
                     </div>
                     <div class="row">
                       <div class="input-field col s12">
                         <i class="mdi-action-lock prefix"></i>
                         <input id="password-again" name="password-again" type="password">
-                        <label for="password-again">Re-type password</label>
+                        <label for="password-again">Repita senha</label>
                       </div>
                     </div>
                     <div class="row">
                       <div class="input-field col s12">
-                        <button type="submit" class="btn-large waves-effect waves-light col s12">Register Now</button>
+                        <button type="submit" class="btn-large waves-effect waves-light col s12">
+                          Cadastrar
+                        </button>
                       </div>
                       <div class="input-field col s12">
-                        <p class="center medium-small sign-up">Already registered?
+                        <p class="center medium-small sign-up">Já possui uma conta?
                           <a href="{% url 'login' %}" >Login</a>
                         </p>
                       </div>

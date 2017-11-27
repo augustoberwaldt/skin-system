@@ -2432,3 +2432,490 @@ Not Found: /favicon.ico
 (0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
 "POST /app/classifier/getDisease HTTP/1.1" 200 553
 "GET /static/assets/font/roboto/Roboto-Light.woff2 HTTP/1.1" 200 49380
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-26 23:23:11.551080'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-26 23:23:11.551080')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account HTTP/1.1" 200 11528
+"GET /static/assets/img/user-icon.svg HTTP/1.1" 200 1702
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-26 23:24:25.338096'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-26 23:24:25.338096')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account?action1= HTTP/1.1" 200 11528
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-26 23:24:26.288557'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-26 23:24:26.288557')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account?action1= HTTP/1.1" 200 11528
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-26 23:33:31.024980'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-26 23:33:31.024980')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account?action1= HTTP/1.1" 200 11616
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-26 23:43:09.728239'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-26 23:43:09.728239')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account?action1= HTTP/1.1" 200 11616
+Forbidden (CSRF token missing or incorrect.): /app/account/update
+"POST /app/account/update HTTP/1.1" 403 2502
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-26 23:43:33.235209'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-26 23:43:33.235209')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account?action1= HTTP/1.1" 200 11747
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-26 23:43:38.269221'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-26 23:43:38.269221')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+Internal Server Error: /app/account/update
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/harley/PycharmProjects/diseases-recognition/administrator/controller/userController.py", line 29, in password_change
+    if request.method == 'POST' and request.POST['password'] == request.POST['reppassword']:
+  File "/home/harley/.local/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'password'"
+"POST /app/account/update HTTP/1.1" 500 83163
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-26 23:43:56.616081'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-26 23:43:56.616081')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+Internal Server Error: /app/account/update
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/harley/PycharmProjects/diseases-recognition/administrator/controller/userController.py", line 29, in password_change
+    if request.method == 'POST' and request.POST['password'] == request.POST['reppassword']:
+  File "/home/harley/.local/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'password'"
+"POST /app/account/update HTTP/1.1" 500 83163
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-26 23:44:57.527880'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-26 23:44:57.527880')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account?action1= HTTP/1.1" 200 11754
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+(0.006) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-26 23:45:03.150525'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-26 23:45:03.150525')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+Internal Server Error: /app/account/profileUpdate
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/harley/PycharmProjects/diseases-recognition/administrator/controller/userController.py", line 29, in password_change
+    if request.method == 'POST' and request.POST['password'] == request.POST['reppassword']:
+  File "/home/harley/.local/lib/python2.7/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'password'"
+"POST /app/account/profileUpdate HTTP/1.1" 500 83261
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-26 23:45:24.356417'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-26 23:45:24.356417')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account?action1= HTTP/1.1" 200 11754
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-26 23:45:29.607600'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-26 23:45:29.607600')
+(0.005) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'augusto.berwaldt@gmail.com'; args=(u'augusto.berwaldt@gmail.com',)
+Internal Server Error: /app/account/profileUpdate
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/harley/PycharmProjects/diseases-recognition/administrator/controller/userController.py", line 51, in change_data
+    u.set_email(request.POST['email'])
+AttributeError: 'User' object has no attribute 'set_email'
+"POST /app/account/profileUpdate HTTP/1.1" 500 79532
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-27 00:08:43.410182'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-27 00:08:43.410182')
+(0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'augusto.berwaldt@gmail.com'; args=(u'augusto.berwaldt@gmail.com',)
+(0.000) BEGIN; args=None
+(0.004) UPDATE "auth_user" SET "password" = 'pbkdf2_sha256$36000$UqTMqBYfodwv$1aaawh3ZsnecxYhgN/4gaNAErIxrhkE7k4jNdOeEid8=', "last_login" = '2017-11-26 21:25:12.992100', "is_superuser" = 1, "username" = 'augusto.berwaldt@gmail.com', "first_name" = 'Augusto Berwaldt', "last_name" = '', "email" = 'augusto.beberwaldt@gmail.com.br', "is_staff" = 1, "is_active" = 1, "date_joined" = '2017-09-20 20:45:46.264350' WHERE "auth_user"."id" = 4; args=(u'pbkdf2_sha256$36000$UqTMqBYfodwv$1aaawh3ZsnecxYhgN/4gaNAErIxrhkE7k4jNdOeEid8=', u'2017-11-26 21:25:12.992100', True, u'augusto.berwaldt@gmail.com', u'Augusto Berwaldt', u'', u'augusto.beberwaldt@gmail.com.br', True, True, u'2017-09-20 20:45:46.264350', 4)
+"POST /app/account/profileUpdate HTTP/1.1" 302 0
+(0.015) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-27 00:08:43.551952'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-27 00:08:43.551952')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account HTTP/1.1" 200 12022
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+(0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-27 08:07:26.950676'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-27 08:07:26.950676')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account HTTP/1.1" 200 11757
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+(0.007) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-27 08:07:32.745443'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-27 08:07:32.745443')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/home HTTP/1.1" 200 7393
+"GET /static/assets/js/administrator/home/home.js HTTP/1.1" 304 0
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-27 08:07:34.958772'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-27 08:07:34.958772')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account HTTP/1.1" 200 11757
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-27 08:08:09.354936'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-27 08:08:09.354936')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'augusto.berwaldt@gmail.com'; args=(u'augusto.berwaldt@gmail.com',)
+(0.000) BEGIN; args=None
+(0.001) UPDATE "auth_user" SET "password" = 'pbkdf2_sha256$36000$UqTMqBYfodwv$1aaawh3ZsnecxYhgN/4gaNAErIxrhkE7k4jNdOeEid8=', "last_login" = '2017-11-26 21:25:12.992100', "is_superuser" = 1, "username" = 'augusto.berwaldt@gmail.com', "first_name" = 'Augusto Berwaldt', "last_name" = '', "email" = 'augusto.beberwaldt@gmail.com', "is_staff" = 1, "is_active" = 1, "date_joined" = '2017-09-20 20:45:46.264350' WHERE "auth_user"."id" = 4; args=(u'pbkdf2_sha256$36000$UqTMqBYfodwv$1aaawh3ZsnecxYhgN/4gaNAErIxrhkE7k4jNdOeEid8=', u'2017-11-26 21:25:12.992100', True, u'augusto.berwaldt@gmail.com', u'Augusto Berwaldt', u'', u'augusto.beberwaldt@gmail.com', True, True, u'2017-09-20 20:45:46.264350', 4)
+"POST /app/account/profileUpdate HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-27 08:08:09.614870'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-27 08:08:09.614870')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account HTTP/1.1" 200 12019
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-27 08:08:25.924557'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-27 08:08:25.924557')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'augusto.berwaldt@gmail.com'; args=(u'augusto.berwaldt@gmail.com',)
+(0.000) BEGIN; args=None
+(0.001) UPDATE "auth_user" SET "password" = 'pbkdf2_sha256$36000$UqTMqBYfodwv$1aaawh3ZsnecxYhgN/4gaNAErIxrhkE7k4jNdOeEid8=', "last_login" = '2017-11-26 21:25:12.992100', "is_superuser" = 1, "username" = 'augusto.berwaldt@gmail.com', "first_name" = 'Augusto Berwaldt', "last_name" = '', "email" = 'augusto.beberwaldt@gmail.com', "is_staff" = 1, "is_active" = 1, "date_joined" = '2017-09-20 20:45:46.264350' WHERE "auth_user"."id" = 4; args=(u'pbkdf2_sha256$36000$UqTMqBYfodwv$1aaawh3ZsnecxYhgN/4gaNAErIxrhkE7k4jNdOeEid8=', u'2017-11-26 21:25:12.992100', True, u'augusto.berwaldt@gmail.com', u'Augusto Berwaldt', u'', u'augusto.beberwaldt@gmail.com', True, True, u'2017-09-20 20:45:46.264350', 4)
+"POST /app/account/profileUpdate HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-27 08:08:26.056252'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-27 08:08:26.056252')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account HTTP/1.1" 200 12019
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-27 08:08:30.014179'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-27 08:08:30.014179')
+(0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'augusto.berwaldt@gmail.com'; args=(u'augusto.berwaldt@gmail.com',)
+(0.000) BEGIN; args=None
+(0.001) UPDATE "auth_user" SET "password" = 'pbkdf2_sha256$36000$UqTMqBYfodwv$1aaawh3ZsnecxYhgN/4gaNAErIxrhkE7k4jNdOeEid8=', "last_login" = '2017-11-26 21:25:12.992100', "is_superuser" = 1, "username" = 'augusto.berwaldt@gmail.com', "first_name" = 'Augusto Berwaldt', "last_name" = '', "email" = 'augusto.beberwaldt@gmail.com', "is_staff" = 1, "is_active" = 1, "date_joined" = '2017-09-20 20:45:46.264350' WHERE "auth_user"."id" = 4; args=(u'pbkdf2_sha256$36000$UqTMqBYfodwv$1aaawh3ZsnecxYhgN/4gaNAErIxrhkE7k4jNdOeEid8=', u'2017-11-26 21:25:12.992100', True, u'augusto.berwaldt@gmail.com', u'Augusto Berwaldt', u'', u'augusto.beberwaldt@gmail.com', True, True, u'2017-09-20 20:45:46.264350', 4)
+"POST /app/account/profileUpdate HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-27 08:08:30.162302'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-27 08:08:30.162302')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account HTTP/1.1" 200 12019
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-27 08:09:11.727995'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-27 08:09:11.727995')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account HTTP/1.1" 200 11599
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls' AND "django_session"."expire_date" > '2017-11-27 08:10:02.307323'); args=('luciel787ex9zexbcpbhrow69xecmnls', u'2017-11-27 08:10:02.307323')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'augusto.berwaldt@gmail.com'; args=(u'augusto.berwaldt@gmail.com',)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "auth_user" SET "password" = 'pbkdf2_sha256$36000$yk30AfJ3OUcO$7s40n7blm77IlcywgcMBA4AyYUSyEAX80BPPE3dundQ=', "last_login" = '2017-11-26 21:25:12.992100', "is_superuser" = 1, "username" = 'augusto.berwaldt@gmail.com', "first_name" = 'Augusto Berwaldt', "last_name" = '', "email" = 'augusto.beberwaldt@gmail.com', "is_staff" = 1, "is_active" = 1, "date_joined" = '2017-09-20 20:45:46.264350' WHERE "auth_user"."id" = 4; args=(u'pbkdf2_sha256$36000$yk30AfJ3OUcO$7s40n7blm77IlcywgcMBA4AyYUSyEAX80BPPE3dundQ=', u'2017-11-26 21:25:12.992100', True, u'augusto.berwaldt@gmail.com', u'Augusto Berwaldt', u'', u'augusto.beberwaldt@gmail.com', True, True, u'2017-09-20 20:45:46.264350', 4)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = '1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn' LIMIT 1; args=(u'1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT '1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn', 'YTQxM2NhZjZkZDkxNjRhNmQyNjZmNjUxMTE5OTYyN2YwZDVjMDcxMTp7Il9hdXRoX3VzZXJfaGFzaCI6ImI5YzFhZTFiM2RhZTQ1MDU1MDg5ZDFhMmZlOGQ5Y2MwZTdlMjkwYWEiLCJfYXV0aF91c2VyX2lkIjoiNCIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=', '2017-12-11 08:10:02.498758'; args=(u'1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn', u'YTQxM2NhZjZkZDkxNjRhNmQyNjZmNjUxMTE5OTYyN2YwZDVjMDcxMTp7Il9hdXRoX3VzZXJfaGFzaCI6ImI5YzFhZTFiM2RhZTQ1MDU1MDg5ZDFhMmZlOGQ5Y2MwZTdlMjkwYWEiLCJfYXV0aF91c2VyX2lkIjoiNCIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=', u'2017-12-11 08:10:02.498758')
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'luciel787ex9zexbcpbhrow69xecmnls'; args=('luciel787ex9zexbcpbhrow69xecmnls',)
+(0.000) BEGIN; args=None
+(0.000) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('luciel787ex9zexbcpbhrow69xecmnls'); args=(u'luciel787ex9zexbcpbhrow69xecmnls',)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "django_session" SET "session_data" = 'OWUzM2I1NzU1NjBiYmU3NWJhZWEyMzZmMjZhZDBhNzk3NTYyNjJjMzp7Il9hdXRoX3VzZXJfaGFzaCI6IjFiOTg1MTY5NmQ3Yzk4MGEzMzYyZDM0MDlkZWM1ZTE0MTEzMWVlNDIiLCJfYXV0aF91c2VyX2lkIjoiNCIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=', "expire_date" = '2017-12-11 08:10:02.692763' WHERE "django_session"."session_key" = '1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn'; args=(u'OWUzM2I1NzU1NjBiYmU3NWJhZWEyMzZmMjZhZDBhNzk3NTYyNjJjMzp7Il9hdXRoX3VzZXJfaGFzaCI6IjFiOTg1MTY5NmQ3Yzk4MGEzMzYyZDM0MDlkZWM1ZTE0MTEzMWVlNDIiLCJfYXV0aF91c2VyX2lkIjoiNCIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=', u'2017-12-11 08:10:02.692763', u'1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn')
+"POST /app/account/update HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn' AND "django_session"."expire_date" > '2017-11-27 08:10:02.822110'); args=('1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn', u'2017-11-27 08:10:02.822110')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account HTTP/1.1" 200 11864
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn' AND "django_session"."expire_date" > '2017-11-27 08:10:15.219178'); args=('1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn', u'2017-11-27 08:10:15.219178')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account?action2= HTTP/1.1" 200 11599
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn' AND "django_session"."expire_date" > '2017-11-27 08:11:13.266321'); args=('1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn', u'2017-11-27 08:11:13.266321')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account?action2= HTTP/1.1" 200 11418
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn' AND "django_session"."expire_date" > '2017-11-27 08:12:29.271202'); args=('1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn', u'2017-11-27 08:12:29.271202')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account?action2= HTTP/1.1" 200 11418
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn' AND "django_session"."expire_date" > '2017-11-27 08:12:32.828575'); args=('1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn', u'2017-11-27 08:12:32.828575')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'augusto.berwaldt@gmail.com'; args=(u'augusto.berwaldt@gmail.com',)
+(0.002) BEGIN; args=None
+(0.001) UPDATE "auth_user" SET "password" = 'pbkdf2_sha256$36000$yk30AfJ3OUcO$7s40n7blm77IlcywgcMBA4AyYUSyEAX80BPPE3dundQ=', "last_login" = '2017-11-26 21:25:12.992100', "is_superuser" = 1, "username" = 'augusto.berwaldt@gmail.com', "first_name" = 'Augusto Berwaldt csascasc', "last_name" = '', "email" = 'augusto.beberwaldt@gmail.com', "is_staff" = 1, "is_active" = 1, "date_joined" = '2017-09-20 20:45:46.264350' WHERE "auth_user"."id" = 4; args=(u'pbkdf2_sha256$36000$yk30AfJ3OUcO$7s40n7blm77IlcywgcMBA4AyYUSyEAX80BPPE3dundQ=', u'2017-11-26 21:25:12.992100', True, u'augusto.berwaldt@gmail.com', u'Augusto Berwaldt csascasc', u'', u'augusto.beberwaldt@gmail.com', True, True, u'2017-09-20 20:45:46.264350', 4)
+"POST /app/account/profileUpdate HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn' AND "django_session"."expire_date" > '2017-11-27 08:12:33.000613'); args=('1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn', u'2017-11-27 08:12:33.000613')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account HTTP/1.1" 200 11692
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn' AND "django_session"."expire_date" > '2017-11-27 08:12:35.846423'); args=('1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn', u'2017-11-27 08:12:35.846423')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/home HTTP/1.1" 200 7393
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn' AND "django_session"."expire_date" > '2017-11-27 08:12:36.815049'); args=('1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn', u'2017-11-27 08:12:36.815049')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account HTTP/1.1" 200 11427
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn' AND "django_session"."expire_date" > '2017-11-27 08:13:41.269225'); args=('1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn', u'2017-11-27 08:13:41.269225')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/home HTTP/1.1" 200 7393
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn' AND "django_session"."expire_date" > '2017-11-27 08:13:58.688101'); args=('1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn', u'2017-11-27 08:13:58.688101')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/account HTTP/1.1" 200 11427
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn' AND "django_session"."expire_date" > '2017-11-27 08:14:01.215364'); args=('1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn', u'2017-11-27 08:14:01.215364')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "administrator_disease"; args=()
+"GET /app/classifier HTTP/1.1" 200 7993
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn' AND "django_session"."expire_date" > '2017-11-27 08:14:05.505651'); args=('1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn', u'2017-11-27 08:14:05.505651')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/classifier/add HTTP/1.1" 200 9608
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn' AND "django_session"."expire_date" > '2017-11-27 08:14:09.424609'); args=('1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn', u'2017-11-27 08:14:09.424609')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "administrator_disease"; args=()
+"GET /app/classifier HTTP/1.1" 200 7993
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn' AND "django_session"."expire_date" > '2017-11-27 08:14:11.072454'); args=('1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn', u'2017-11-27 08:14:11.072454')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "auth_user"; args=()
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" LIMIT 3; args=()
+"GET /app/user HTTP/1.1" 200 8425
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn' AND "django_session"."expire_date" > '2017-11-27 08:45:22.239937'); args=('1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn', u'2017-11-27 08:45:22.239937')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = '1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn'; args=('1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn',)
+(0.000) BEGIN; args=None
+(0.001) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn'); args=(u'1zpp8ipehwj4mbn0cnx0qmlwl0mkngxn',)
+"GET /app/logout HTTP/1.1" 302 0
+"GET /app/ HTTP/1.1" 200 5746
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+"GET /app/register HTTP/1.1" 200 6653
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+"GET /app/register HTTP/1.1" 200 6656
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+"GET /app/register HTTP/1.1" 200 6653
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+"GET /app/register HTTP/1.1" 200 6695
+"GET /app/ HTTP/1.1" 200 5487
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+"GET /app/register HTTP/1.1" 200 6696
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+"GET /app/register HTTP/1.1" 200 6697
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+"GET /app/register HTTP/1.1" 200 6698
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+"GET /app/ HTTP/1.1" 200 5487
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+"GET /app/ HTTP/1.1" 200 5488
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+"GET /app/resetPass HTTP/1.1" 200 5382
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+"GET /app/resetPass HTTP/1.1" 200 5383
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+"GET /app/resetPass HTTP/1.1" 200 5369
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+"GET /app/ HTTP/1.1" 200 5488
+"GET /static/assets/css/materialize.css.map HTTP/1.1" 404 1804
+"GET / HTTP/1.1" 200 5537
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET / HTTP/1.1" 200 5537
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET / HTTP/1.1" 200 5537
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET / HTTP/1.1" 200 4771
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET / HTTP/1.1" 200 4771
+"GET / HTTP/1.1" 200 4760
+"GET / HTTP/1.1" 200 4758
+"GET / HTTP/1.1" 200 4798
+"GET / HTTP/1.1" 200 4718
+"GET / HTTP/1.1" 200 4718
+"GET / HTTP/1.1" 200 4718
+"GET / HTTP/1.1" 200 4720
+"GET / HTTP/1.1" 200 4720
+"GET / HTTP/1.1" 200 4720
+"GET / HTTP/1.1" 200 4720
+"GET / HTTP/1.1" 200 4718
+"GET / HTTP/1.1" 200 4601
+"GET / HTTP/1.1" 200 4601
+"GET /contato HTTP/1.1" 200 5467
+"GET / HTTP/1.1" 200 4601
+"GET /sobre HTTP/1.1" 200 5467
+"GET /sobre HTTP/1.1" 200 5467
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET /contato HTTP/1.1" 200 5467
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET /contato HTTP/1.1" 200 5467
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET /sobre HTTP/1.1" 200 4929
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET /contato HTTP/1.1" 200 5467
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET / HTTP/1.1" 200 4601
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET /contato HTTP/1.1" 200 5467
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET /contato HTTP/1.1" 200 5467
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET /sobre HTTP/1.1" 200 4929
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET /sobre HTTP/1.1" 200 4937
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET /sobre HTTP/1.1" 200 4938
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET /sobre HTTP/1.1" 200 4938
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET /sobre HTTP/1.1" 200 4938
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET /sobre HTTP/1.1" 200 4938
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET /contato HTTP/1.1" 200 5467
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET /contato HTTP/1.1" 200 4572
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET /contato HTTP/1.1" 200 5313
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET /contato HTTP/1.1" 200 4731
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET /contato HTTP/1.1" 200 4731
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET /contato HTTP/1.1" 200 4796
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET /contato HTTP/1.1" 200 4797
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+"GET /contato HTTP/1.1" 200 4797
+"GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798

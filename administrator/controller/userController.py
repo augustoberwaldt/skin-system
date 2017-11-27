@@ -42,3 +42,21 @@ def password_change(request):
 
     
     return render(request, 'account/index.html', {}) 
+
+@login_required
+def change_data(request):
+
+    if request.method == 'POST':
+        u = User.objects.get(username=request.user)
+        u.email  = request.POST['email']
+        u.first_name  = request.POST['first_name']
+        u.save()   
+        reponse = {'title': 'Success ', 'message': 'Atualiazado com sucesso !', 'type': 'success'}
+        messages.add_message(request, messages.INFO, json.dumps(reponse))    
+        return redirect('account')
+    else:
+        reponse = {'title' : 'Dados invalidos ! ', 'message' : 'Tente novamente.', 'type' : 'error' }
+
+        messages.add_message(request, messages.INFO, json.dumps(reponse)) 
+
+    return render(request, 'account/index.html', {})
