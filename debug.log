@@ -2919,3 +2919,385 @@ VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label
 "GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
 "GET /contato HTTP/1.1" 200 4797
 "GET /static/assets/css/img/site-logo.png HTTP/1.1" 404 1798
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+"GET /app/register HTTP/1.1" 200 6698
+(0.001) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'Teste5@gmail.com' LIMIT 1; args=(u'Teste5@gmail.com',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$36000$WfrWXkP05lzu$SmHPxGtWdUap7AIOQEMz4qHXiA66L36OeyIWcOkbCLw=', NULL, 0, 'Teste5@gmail.com', 'Teste5', '', '', 0, 1, '2017-11-27 09:36:37.580347'); args=[u'pbkdf2_sha256$36000$WfrWXkP05lzu$SmHPxGtWdUap7AIOQEMz4qHXiA66L36OeyIWcOkbCLw=', None, False, u'Teste5@gmail.com', u'Teste5', u'', u'', False, True, u'2017-11-27 09:36:37.580347']
+"POST /app/register/add HTTP/1.1" 302 0
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+"GET /app/register HTTP/1.1" 200 6958
+(0.001) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'Teste6@gmail.com' LIMIT 1; args=(u'Teste6@gmail.com',)
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$36000$NO4GRamwcZDH$YNrXh0zuOwfzlViVkZAg69zYBLumI5UNWJ0TJec458A=', NULL, 0, 'Teste6@gmail.com', 'Teste6', '', '', 0, 1, '2017-11-27 09:37:07.066836'); args=[u'pbkdf2_sha256$36000$NO4GRamwcZDH$YNrXh0zuOwfzlViVkZAg69zYBLumI5UNWJ0TJec458A=', None, False, u'Teste6@gmail.com', u'Teste6', u'', u'', False, True, u'2017-11-27 09:37:07.066836']
+"POST /app/register/add HTTP/1.1" 302 0
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+"GET /app/register HTTP/1.1" 200 6958
+"GET /app/ HTTP/1.1" 200 5488
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'augusto.berwaldt@gmail.com'; args=(u'augusto.berwaldt@gmail.com',)
+"POST /app/ HTTP/1.1" 200 5752
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'augusto.berwaldt@gmail.com'; args=(u'augusto.berwaldt@gmail.com',)
+"POST /app/ HTTP/1.1" 200 5752
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'augusto.berwaldt@gmail.com'; args=(u'augusto.berwaldt@gmail.com',)
+"POST /app/ HTTP/1.1" 200 5752
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'augusto.berwaldt@gmail.com'; args=(u'augusto.berwaldt@gmail.com',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = '4dfa7f14v0j8ydwl9369gtd4zjhcavkx' LIMIT 1; args=(u'4dfa7f14v0j8ydwl9369gtd4zjhcavkx',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT '4dfa7f14v0j8ydwl9369gtd4zjhcavkx', 'OWUyMDM2MGU2ZDQxMDJhNWFlNDYzNDQ5MWUyZmUxODU4YzUxN2JkNTp7fQ==', '2017-12-11 09:37:43.781310'; args=(u'4dfa7f14v0j8ydwl9369gtd4zjhcavkx', u'OWUyMDM2MGU2ZDQxMDJhNWFlNDYzNDQ5MWUyZmUxODU4YzUxN2JkNTp7fQ==', u'2017-12-11 09:37:43.781310')
+(0.000) BEGIN; args=None
+(0.000) UPDATE "auth_user" SET "last_login" = '2017-11-27 09:37:43.876027' WHERE "auth_user"."id" = 4; args=(u'2017-11-27 09:37:43.876027', 4)
+(0.000) BEGIN; args=None
+(0.001) UPDATE "django_session" SET "session_data" = 'YTVhMTZiNjQxMDQyNDUzZGE2YjU2NTE3ZWY4MTI1MzM3YjM2YWM1ZDp7Il9hdXRoX3VzZXJfaGFzaCI6IjFiOTg1MTY5NmQ3Yzk4MGEzMzYyZDM0MDlkZWM1ZTE0MTEzMWVlNDIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiI0In0=', "expire_date" = '2017-12-11 09:37:44.061608' WHERE "django_session"."session_key" = '4dfa7f14v0j8ydwl9369gtd4zjhcavkx'; args=(u'YTVhMTZiNjQxMDQyNDUzZGE2YjU2NTE3ZWY4MTI1MzM3YjM2YWM1ZDp7Il9hdXRoX3VzZXJfaGFzaCI6IjFiOTg1MTY5NmQ3Yzk4MGEzMzYyZDM0MDlkZWM1ZTE0MTEzMWVlNDIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiI0In0=', u'2017-12-11 09:37:44.061608', u'4dfa7f14v0j8ydwl9369gtd4zjhcavkx')
+"POST /app/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '4dfa7f14v0j8ydwl9369gtd4zjhcavkx' AND "django_session"."expire_date" > '2017-11-27 09:37:44.184146'); args=('4dfa7f14v0j8ydwl9369gtd4zjhcavkx', u'2017-11-27 09:37:44.184146')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/home HTTP/1.1" 200 7393
+"GET /static/assets/js/administrator/home/home.js HTTP/1.1" 304 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '4dfa7f14v0j8ydwl9369gtd4zjhcavkx' AND "django_session"."expire_date" > '2017-11-27 09:37:58.057097'); args=('4dfa7f14v0j8ydwl9369gtd4zjhcavkx', u'2017-11-27 09:37:58.057097')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "auth_user"; args=()
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" LIMIT 5; args=()
+"GET /app/user HTTP/1.1" 200 9023
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = '4dfa7f14v0j8ydwl9369gtd4zjhcavkx' AND "django_session"."expire_date" > '2017-11-27 09:38:19.049130'); args=('4dfa7f14v0j8ydwl9369gtd4zjhcavkx', u'2017-11-27 09:38:19.049130')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = '4dfa7f14v0j8ydwl9369gtd4zjhcavkx'; args=('4dfa7f14v0j8ydwl9369gtd4zjhcavkx',)
+(0.000) BEGIN; args=None
+(0.001) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('4dfa7f14v0j8ydwl9369gtd4zjhcavkx'); args=(u'4dfa7f14v0j8ydwl9369gtd4zjhcavkx',)
+"GET /app/logout HTTP/1.1" 302 0
+"GET /app/ HTTP/1.1" 200 5747
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+"GET /app/register HTTP/1.1" 200 6698
+(0.001) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'Teste7@gmail.com' LIMIT 1; args=(u'Teste7@gmail.com',)
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$36000$YQwAbYGt5nsj$S/tHtuQiS9SJ7ag5N6g1pNM2DNAENKF9oWAAp8Hhc3U=', NULL, 0, 'Teste7@gmail.com', 'Teste7', '', '', 0, 1, '2017-11-27 09:38:54.603591'); args=[u'pbkdf2_sha256$36000$YQwAbYGt5nsj$S/tHtuQiS9SJ7ag5N6g1pNM2DNAENKF9oWAAp8Hhc3U=', None, False, u'Teste7@gmail.com', u'Teste7', u'', u'', False, True, u'2017-11-27 09:38:54.603591']
+"POST /app/register/add HTTP/1.1" 302 0
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+"GET /app/register HTTP/1.1" 200 6958
+"GET /app/ HTTP/1.1" 200 5488
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'augusto.berwaldt@gmail.com'; args=(u'augusto.berwaldt@gmail.com',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'rlv376jqrr8dusaxm0jixe7b8c7b7lfc' LIMIT 1; args=(u'rlv376jqrr8dusaxm0jixe7b8c7b7lfc',)
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'rlv376jqrr8dusaxm0jixe7b8c7b7lfc', 'OWUyMDM2MGU2ZDQxMDJhNWFlNDYzNDQ5MWUyZmUxODU4YzUxN2JkNTp7fQ==', '2017-12-11 09:38:59.755135'; args=(u'rlv376jqrr8dusaxm0jixe7b8c7b7lfc', u'OWUyMDM2MGU2ZDQxMDJhNWFlNDYzNDQ5MWUyZmUxODU4YzUxN2JkNTp7fQ==', u'2017-12-11 09:38:59.755135')
+(0.000) BEGIN; args=None
+(0.000) UPDATE "auth_user" SET "last_login" = '2017-11-27 09:38:59.840306' WHERE "auth_user"."id" = 4; args=(u'2017-11-27 09:38:59.840306', 4)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "django_session" SET "session_data" = 'YTVhMTZiNjQxMDQyNDUzZGE2YjU2NTE3ZWY4MTI1MzM3YjM2YWM1ZDp7Il9hdXRoX3VzZXJfaGFzaCI6IjFiOTg1MTY5NmQ3Yzk4MGEzMzYyZDM0MDlkZWM1ZTE0MTEzMWVlNDIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiI0In0=', "expire_date" = '2017-12-11 09:38:59.908063' WHERE "django_session"."session_key" = 'rlv376jqrr8dusaxm0jixe7b8c7b7lfc'; args=(u'YTVhMTZiNjQxMDQyNDUzZGE2YjU2NTE3ZWY4MTI1MzM3YjM2YWM1ZDp7Il9hdXRoX3VzZXJfaGFzaCI6IjFiOTg1MTY5NmQ3Yzk4MGEzMzYyZDM0MDlkZWM1ZTE0MTEzMWVlNDIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiI0In0=', u'2017-12-11 09:38:59.908063', u'rlv376jqrr8dusaxm0jixe7b8c7b7lfc')
+"POST /app/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'rlv376jqrr8dusaxm0jixe7b8c7b7lfc' AND "django_session"."expire_date" > '2017-11-27 09:38:59.983055'); args=('rlv376jqrr8dusaxm0jixe7b8c7b7lfc', u'2017-11-27 09:38:59.983055')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/home HTTP/1.1" 200 7393
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'rlv376jqrr8dusaxm0jixe7b8c7b7lfc' AND "django_session"."expire_date" > '2017-11-27 09:39:02.454743'); args=('rlv376jqrr8dusaxm0jixe7b8c7b7lfc', u'2017-11-27 09:39:02.454743')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "auth_user"; args=()
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" LIMIT 5; args=()
+Exception while resolving variable 'has_previous' in template 'user/index.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [has_previous] in u'<django.core.paginator.Paginator object at 0x7f20f91955d0>'
+Exception while resolving variable 'has_next' in template 'user/index.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [has_next] in u'<django.core.paginator.Paginator object at 0x7f20f91955d0>'
+"GET /app/user HTTP/1.1" 200 9645
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'rlv376jqrr8dusaxm0jixe7b8c7b7lfc' AND "django_session"."expire_date" > '2017-11-27 09:42:46.817980'); args=('rlv376jqrr8dusaxm0jixe7b8c7b7lfc', u'2017-11-27 09:42:46.817980')
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'rlv376jqrr8dusaxm0jixe7b8c7b7lfc'; args=('rlv376jqrr8dusaxm0jixe7b8c7b7lfc',)
+(0.000) BEGIN; args=None
+(0.001) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('rlv376jqrr8dusaxm0jixe7b8c7b7lfc'); args=(u'rlv376jqrr8dusaxm0jixe7b8c7b7lfc',)
+"GET /app/logout HTTP/1.1" 302 0
+"GET /app/ HTTP/1.1" 200 5747
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+"GET /app/register HTTP/1.1" 200 6698
+(0.001) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'testecascascascascasc@teste.com' LIMIT 1; args=(u'testecascascascascasc@teste.com',)
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$36000$myaL6s60POJI$QblNNbw0v7lfR9f7hedzyNMIcUgB8MUKnV7qLsUORQM=', NULL, 0, 'testecascascascascasc@teste.com', 'teste', '', 'testecascascascascasc@teste.com', 0, 1, '2017-11-27 09:43:04.038058'); args=[u'pbkdf2_sha256$36000$myaL6s60POJI$QblNNbw0v7lfR9f7hedzyNMIcUgB8MUKnV7qLsUORQM=', None, False, u'testecascascascascasc@teste.com', u'teste', u'', u'testecascascascascasc@teste.com', False, True, u'2017-11-27 09:43:04.038058']
+"POST /app/register/add HTTP/1.1" 302 0
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+"GET /app/register HTTP/1.1" 200 6958
+(0.001) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'teste2@gmail.com' LIMIT 1; args=(u'teste2@gmail.com',)
+(0.000) BEGIN; args=None
+(5.011) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$36000$lf9dl1wNnMWG$hFiVhoFwYtybR5JXr+AbDe/cX3ktYUdB3nZUemtC0n0=', NULL, 0, 'teste2@gmail.com', 'teste2', '', 'teste2@gmail.com', 0, 1, '2017-11-27 09:46:15.974756'); args=[u'pbkdf2_sha256$36000$lf9dl1wNnMWG$hFiVhoFwYtybR5JXr+AbDe/cX3ktYUdB3nZUemtC0n0=', None, False, u'teste2@gmail.com', u'teste2', u'', u'teste2@gmail.com', False, True, u'2017-11-27 09:46:15.974756']
+Internal Server Error: /app/register/add
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/harley/PycharmProjects/diseases-recognition/administrator/controller/loginController.py", line 38, in register
+    form.save()
+  File "/home/harley/PycharmProjects/diseases-recognition/administrator/formsModel/FormUser.py", line 13, in save
+    user.save()
+  File "/home/harley/.local/lib/python2.7/site-packages/django/contrib/auth/base_user.py", line 80, in save
+    super(AbstractBaseUser, self).save(*args, **kwargs)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/db/models/base.py", line 807, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/db/models/base.py", line 837, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/db/models/base.py", line 923, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/db/models/base.py", line 962, in _do_insert
+    using=using, raw=raw)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/db/models/query.py", line 1076, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1099, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/db/backends/utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/harley/.local/lib/python2.7/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: database is locked
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" LIMIT 21; args=()
+"POST /app/register/add HTTP/1.1" 500 144757
+(0.003) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'teste2@gmail.com' LIMIT 1; args=(u'teste2@gmail.com',)
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$36000$2UKAGqPQiGJ2$vlROh6e0i9vCOnRh/5/fo94HNuxyzhWZ/75qbUaxkuw=', NULL, 0, 'teste2@gmail.com', 'teste2', '', 'teste2@gmail.com', 0, 1, '2017-11-27 09:46:41.039788'); args=[u'pbkdf2_sha256$36000$2UKAGqPQiGJ2$vlROh6e0i9vCOnRh/5/fo94HNuxyzhWZ/75qbUaxkuw=', None, False, u'teste2@gmail.com', u'teste2', u'', u'teste2@gmail.com', False, True, u'2017-11-27 09:46:41.039788']
+"POST /app/register/add HTTP/1.1" 302 0
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+"GET /app/register HTTP/1.1" 200 6958
+(0.001) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'teste3@gmail.com' LIMIT 1; args=(u'teste3@gmail.com',)
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$36000$GAcozfafxqbf$Qs/6TXXKd+C+Uig4vECvdBmR5g19PVP2pdQDaM3o+tY=', NULL, 0, 'teste3@gmail.com', 'teste3', '', 'teste3@gmail.com', 0, 1, '2017-11-27 09:47:10.729423'); args=[u'pbkdf2_sha256$36000$GAcozfafxqbf$Qs/6TXXKd+C+Uig4vECvdBmR5g19PVP2pdQDaM3o+tY=', None, False, u'teste3@gmail.com', u'teste3', u'', u'teste3@gmail.com', False, True, u'2017-11-27 09:47:10.729423']
+"POST /app/register/add HTTP/1.1" 302 0
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+"GET /app/register HTTP/1.1" 200 6958
+(0.001) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'teste4@gmail.com' LIMIT 1; args=(u'teste4@gmail.com',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$36000$AfVSYJyPsJse$nAkywwrC8oSp4DI4ZFvx+Txor6Yve/X74j6SWcfkz1c=', NULL, 0, 'teste4@gmail.com', 'teste4', '', 'teste4@gmail.com', 0, 1, '2017-11-27 09:47:53.019455'); args=[u'pbkdf2_sha256$36000$AfVSYJyPsJse$nAkywwrC8oSp4DI4ZFvx+Txor6Yve/X74j6SWcfkz1c=', None, False, u'teste4@gmail.com', u'teste4', u'', u'teste4@gmail.com', False, True, u'2017-11-27 09:47:53.019455']
+"POST /app/register/add HTTP/1.1" 302 0
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+"GET /app/register HTTP/1.1" 200 6958
+(0.002) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'teste5@gmail.com' LIMIT 1; args=(u'teste5@gmail.com',)
+(0.000) BEGIN; args=None
+(0.000) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$36000$Y0eYicM9hDgL$tW9kEfKSbvgtwUuLh70fN0jsZqddSDyjYbV/18kjg6Y=', NULL, 0, 'teste5@gmail.com', 'teste5', '', 'teste5@gmail.com', 0, 1, '2017-11-27 09:48:10.899020'); args=[u'pbkdf2_sha256$36000$Y0eYicM9hDgL$tW9kEfKSbvgtwUuLh70fN0jsZqddSDyjYbV/18kjg6Y=', None, False, u'teste5@gmail.com', u'teste5', u'', u'teste5@gmail.com', False, True, u'2017-11-27 09:48:10.899020']
+"POST /app/register/add HTTP/1.1" 302 0
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+"GET /app/register HTTP/1.1" 200 6958
+(0.001) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."username" = 'teste6@gmail.com' LIMIT 1; args=(u'teste6@gmail.com',)
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$36000$hbvSZ620lZJn$5UrnEQxV3uEtFnKkbFQMKUsp0gtDlITHybhx/JBVOKc=', NULL, 0, 'teste6@gmail.com', 'teste6', '', 'teste6@gmail.com', 0, 1, '2017-11-27 09:48:29.294522'); args=[u'pbkdf2_sha256$36000$hbvSZ620lZJn$5UrnEQxV3uEtFnKkbFQMKUsp0gtDlITHybhx/JBVOKc=', None, False, u'teste6@gmail.com', u'teste6', u'', u'teste6@gmail.com', False, True, u'2017-11-27 09:48:29.294522']
+"POST /app/register/add HTTP/1.1" 302 0
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+Exception while resolving variable 'error_messages' in template 'auth/register.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [error_messages] in u'<tr><th><label for="id_username">Username:</label></th><td><input type="email" name="username" id="id_username" required class="validate" maxlength="150" /><br /><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></td></tr>\n<tr><th><label for="id_first_name">First name:</label></th><td><input type="text" name="first_name" id="id_first_name" class="validate" maxlength="30" /></td></tr>\n<tr><th><label for="id_password">Password:</label></th><td><input type="password" name="password" id="id_password" required class="validate" maxlength="128" /></td></tr>'
+"GET /app/register HTTP/1.1" 200 6958
+"GET /app/ HTTP/1.1" 200 5488
+(0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'augusto.berwaldt@gmail.com'; args=(u'augusto.berwaldt@gmail.com',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'wp9q8e4la26713q979ykvo7zeggp9wfb' LIMIT 1; args=(u'wp9q8e4la26713q979ykvo7zeggp9wfb',)
+(0.000) BEGIN; args=None
+(0.001) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'wp9q8e4la26713q979ykvo7zeggp9wfb', 'OWUyMDM2MGU2ZDQxMDJhNWFlNDYzNDQ5MWUyZmUxODU4YzUxN2JkNTp7fQ==', '2017-12-11 09:48:34.360456'; args=(u'wp9q8e4la26713q979ykvo7zeggp9wfb', u'OWUyMDM2MGU2ZDQxMDJhNWFlNDYzNDQ5MWUyZmUxODU4YzUxN2JkNTp7fQ==', u'2017-12-11 09:48:34.360456')
+(0.000) BEGIN; args=None
+(0.000) UPDATE "auth_user" SET "last_login" = '2017-11-27 09:48:34.429778' WHERE "auth_user"."id" = 4; args=(u'2017-11-27 09:48:34.429778', 4)
+(0.000) BEGIN; args=None
+(0.000) UPDATE "django_session" SET "session_data" = 'YTVhMTZiNjQxMDQyNDUzZGE2YjU2NTE3ZWY4MTI1MzM3YjM2YWM1ZDp7Il9hdXRoX3VzZXJfaGFzaCI6IjFiOTg1MTY5NmQ3Yzk4MGEzMzYyZDM0MDlkZWM1ZTE0MTEzMWVlNDIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiI0In0=', "expire_date" = '2017-12-11 09:48:34.511670' WHERE "django_session"."session_key" = 'wp9q8e4la26713q979ykvo7zeggp9wfb'; args=(u'YTVhMTZiNjQxMDQyNDUzZGE2YjU2NTE3ZWY4MTI1MzM3YjM2YWM1ZDp7Il9hdXRoX3VzZXJfaGFzaCI6IjFiOTg1MTY5NmQ3Yzk4MGEzMzYyZDM0MDlkZWM1ZTE0MTEzMWVlNDIiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiI0In0=', u'2017-12-11 09:48:34.511670', u'wp9q8e4la26713q979ykvo7zeggp9wfb')
+"POST /app/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'wp9q8e4la26713q979ykvo7zeggp9wfb' AND "django_session"."expire_date" > '2017-11-27 09:48:34.594437'); args=('wp9q8e4la26713q979ykvo7zeggp9wfb', u'2017-11-27 09:48:34.594437')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+"GET /app/home HTTP/1.1" 200 7393
+(0.008) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'wp9q8e4la26713q979ykvo7zeggp9wfb' AND "django_session"."expire_date" > '2017-11-27 09:48:36.556269'); args=('wp9q8e4la26713q979ykvo7zeggp9wfb', u'2017-11-27 09:48:36.556269')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 4; args=(4,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "auth_user"; args=()
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" LIMIT 5; args=()
+Exception while resolving variable 'has_previous' in template 'user/index.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [has_previous] in u'<django.core.paginator.Paginator object at 0x7f2618c4c110>'
+Exception while resolving variable 'has_next' in template 'user/index.html'.
+Traceback (most recent call last):
+  File "/home/harley/.local/lib/python2.7/site-packages/django/template/base.py", line 903, in _resolve_lookup
+    (bit, current))  # missing attribute
+VariableDoesNotExist: Failed lookup for key [has_next] in u'<django.core.paginator.Paginator object at 0x7f2618c4c110>'
+"GET /app/user HTTP/1.1" 200 9711

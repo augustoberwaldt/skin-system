@@ -7,6 +7,7 @@ class FormUser(forms.ModelForm):
 
     def save(self, commit=True):
         user = super(FormUser, self).save(commit=False)
+        user.email = self.cleaned_data["username"]
         user.set_password((self.cleaned_data["password"]))
         if commit:
             user.save()
